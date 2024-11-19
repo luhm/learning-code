@@ -1,9 +1,12 @@
-# uso de *id* e *class* :
+# Best Practices in CSS
+
+## Uso de *id* e *class*
 - id é mais específico que class, e tem amis força (1, 0, 0)
 - class é no meio, entre id (0, 1, 0) e o normal
 - no rocketseat eu aprendi a usar o id primeiro e colocar as coisas que valem pra tudo daquele box/container e colocar a class se eu quiser que seja algo só naquele
 - falando com a Fê, ela falou de fazer ao contrário, usar id quando for o mais específico e for só praquele elemento específico, e class quando for um pouco mais geral
   - e manter no geral usando a tag sem identificador - por exemplo, se todo parte de texto eu usar a tag `<p>` , as características que eu usar nela eu coloco uma class ou uma id
+
 ## *CLASS*
 - se colocar várias class `box` e usar, no CSS apenas .box, vai funcionar pra todas, por exemplo:
   - =”box abc”
@@ -57,14 +60,21 @@
   
         
 # Fontes
-    - quando a fonte usada der algum erro, é bom referenciar a família dela no código para que a página leia uma fonte do mesmo “tipo” e não fuja muito da proposta nem dê maiores erros.
-    
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c8398193-6d0c-466c-a40e-ed7c18d7db81/3f05b955-33f6-410a-ad0a-1f5bbf6cecfa/image.png)
+- quando a fonte usada der algum erro, é bom referenciar a família dela no código para que a página leia uma fonte do mesmo “tipo” e não fuja muito da proposta nem dê maiores erros.
+
+FONTE|EXEMPLO
+-----|-----
+SERIF|Times new roman, Georgia, Garamond
+SANS-SERIF|Arial, Tahoma, Helvetica
+MONOSPACE|Courier new
+CORSIVO|Brush script MT
+FANTASIA|Copperplate, Papyrus
     
 # Minificar
-    - deixar o site mais rápido de ser carregado
-    - os arquivos JS e CSS ficam menores
-    - há ferramentas que fazem isso pra voce depois do CSS pronto
+- deixar o site mais rápido de ser carregado
+- os arquivos JS e CSS ficam menores
+- há ferramentas que fazem isso pra voce depois do CSS pronto
+
 # Nomeações/Nomenclaturas
-    - existem convenções de nomeação, uma delas é a BEM - Bloco, Elemento, Modificador
-        - https://getbem.com/naming/
+- existem convenções de nomeação, uma delas é a BEM - Bloco, Elemento, Modificador
+  - https://getbem.com/naming/
