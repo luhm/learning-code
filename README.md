@@ -6,6 +6,12 @@ This will be a mix between **TIL (Today I Learned)** and **100 days {coding}**.
 
 The TIL methodology helps me to build my documentation and the 100 days {coding} challenge helps me remember that my studies have a practical part that is necessary and gives meaning to all theory I am studying.
 
+## TIL
+
+- [Best Practices](https://github.com/luhm/learning-code/tree/main/til/best-practices)
+- [Git an GitHub](https://github.com/luhm/learning-code/tree/main/til/git)
+- [FrontEnd](https://github.com/luhm/learning-code/tree/main/til/frontend)
+
 ## 100 days {coding}
 
 - days 1 to 10:
