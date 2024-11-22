@@ -8,10 +8,10 @@ The TIL methodology helps me to build my documentation and the 100 days {coding}
 
 ## TIL
 
-- [Best Practices](https://github.com/luhm/learning-code/tree/main/til/best-practices)
-- [Git and GitHub](https://github.com/luhm/learning-code/tree/main/til/git)
-- [FrontEnd](https://github.com/luhm/learning-code/tree/main/til/frontend)
-- [Programming](https://github.com/luhm/learning-code/tree/main/til/programming)
+- [👏 Best Practices](https://github.com/luhm/learning-code/tree/main/til/best-practices)
+- [🔗 Git and GitHub](https://github.com/luhm/learning-code/tree/main/til/git)
+- [✨ FrontEnd](https://github.com/luhm/learning-code/tree/main/til/frontend)
+- [💻 Programming](https://github.com/luhm/learning-code/tree/main/til/programming)
 
 ## 100 days {coding}
 
