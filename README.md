@@ -4,7 +4,7 @@ This is a repo where I share with you what I've learned while studying frontend 
 
 This will be a mix between **TIL (Today I Learned)** and **100 days {coding}**.
 
-The TIL methodology helps me to build my documentation and the 100 days {coding} challenge helps me remember that my studies have a practical part that is necessary and that gives meaning to all theory I am studying.
+The TIL methodology helps me to build my documentation and the 100 days {coding} challenge helps me remember that my studies have a practical part that is necessary and gives meaning to all theory I am studying.
 
 ## 100 days {coding}
 
