@@ -101,4 +101,61 @@ p {
   - nem com caracteres especiais (apenas _)
  
 - link interessante: [CSS Tricks](https://css-tricks.com/)
-  
+
+## Pseudo-elements
+
+- são elementos para estilizar apenas uma parte do código, por exemplo a primeira letra da palavra/frase
+- podem ser aplicados a classes específicas
+- podem ter vários pseudo-elements ao mesmo tempo
+- sintaxe:
+  ```css
+  seletor::pseudo-element {
+    propriedade: valor;
+  }
+  ```
+
+- é usado o ::
+- o : sozinho é pseudo-class
+
+### Principais pseudo-elements
+
+`::first-line`
+- primeira linha
+- pode mudar:
+  - font properties
+  - color properties
+  - background properties
+  - word-spacing
+  - letter-spacing
+  - text-decoration
+  - vertical-align
+  - text-transform
+  - line-height
+  - clear
+
+`::first-letter`
+- apenas em block level
+- se aplica:
+  - font properties
+  - color properties
+  - background properties
+  - margin properties
+  - padding properties
+  - border properties
+  - text-decoration
+  - vertical-align (only if "float" is "none")
+  - text-transform
+  - line-height
+  - float
+  - clear
+ 
+`::before`
+- insere algo antes do conteúdo/elemento indicado
+
+`::after`
+- insere algo depois do conteúdo/elemento indicado
+
+`::marker`
+- altera os marcadores de uma lista
+
+- [Lista completa de pseudo-elements](https://www.w3schools.com/cssref/css_ref_pseudo_elements.php)
