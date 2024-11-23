@@ -1,4 +1,4 @@
-# Lógica de Programação
+# Introdução a Lógica de Programação
 
 - estruturar o raciocinio em comandos
   - comunicar com a máquina
@@ -22,7 +22,7 @@
   - string = texto
   - booleano
 
-## Aplicando a lógica
+### Aplicando a lógica
 
 - operadores
   - símbolos ao longo do codigo
@@ -36,6 +36,23 @@
   - condição que repete um trecho de código até que seja falsa
   - loops
   - for, while
--  
+
+## Estruturas de dados
+
+## Paradigmas da programação
+
+- como estrutura o codigo
+- POO - programação orientada a objeto
+  - é o mais comum
+  - codigos reaproveitáveis, reutilizáveis, escaláveis
+- estruturada
+- funcional
+- orientada a protocolos
+
+## Análise de requisitos
+
+- analisar e tirar as informações importantes
+- encontrar soluções
+- 
  
 
