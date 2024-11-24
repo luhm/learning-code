@@ -116,6 +116,7 @@ p {
 
 - é usado o ::
 - o : sozinho é pseudo-class
+- [Lista completa de pseudo-elements](https://www.w3schools.com/cssref/css_ref_pseudo_elements.php)
 
 ### Principais pseudo-elements
 
@@ -158,4 +159,12 @@ p {
 `::marker`
 - altera os marcadores de uma lista
 
-- [Lista completa de pseudo-elements](https://www.w3schools.com/cssref/css_ref_pseudo_elements.php)
+## Listas
+
+- `list-style-type` é uma propriedade que altera o tipo de marcador, círculo, quadrado, numeros romanos etc
+- `list-style-image` tranforma o marcador em uma imagem
+- `list-style-position` diz se os marcadores estarão dentro ou fora da lista
+  - pode ser outside ou inside
+- se quiser usar todos na mesma linha, a ordem é: type position image
+- 
+  - 
