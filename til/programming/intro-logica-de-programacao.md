@@ -6,6 +6,10 @@
   - não é uma linguagem de prog
   - ta mais proximo da escrita humana
   - vantagem: não se preocupa com sintaxe ao aprender conceitos
+- representações:
+  - em fluxograma
+  - em diagrama de Nassi/ Schneiderman
+  - em portugol
 
 ## Algoritmo
 
