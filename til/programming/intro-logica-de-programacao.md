@@ -17,7 +17,9 @@
 - passo a passo
   - instruções para a máquina fazer algo
   - a **sequencia** é importante - não assa o bolo antes de bater
-- variável: espaço que guarda qualquer informação - um baú
+- variável: espaço que guarda qualquer informação - um baú ou uma estante escaninho
+  - colocando-se uma etiqueta em um espaço, ali apenas entra aquele objeto indicado na etiqueta
+  - em uma variavel cabe um objeto, se quiser trocar o objeto, tem que tirar o primeiro
 - constante: espaço que guarda uma informação que não varia
   - numero de dias da semana
 - tipo de dado:
