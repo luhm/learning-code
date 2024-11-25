@@ -1,5 +1,8 @@
 # Algoritmos
 
+- comando de saída fala qual será a saída
+- comando de entrada
+
 ## Variáveis
 
 - É formada pelo identificador e pelo tipo
@@ -22,3 +25,4 @@
 ```css
 var
   identificador: tipo
+```
