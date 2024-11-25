@@ -2,6 +2,16 @@
 
 - comando de saída fala qual será a saída
 - comando de entrada
+- Sequencia de instruções:
+  - ordenada
+  - finita
+  - não ambígua
+- cada linha realiza uma parte da tarefa como uma receita
+- refinamento de ações
+  - ações que estão implícitas na receita
+  - ações intermediárias
+  - em uma receita de bolo precisamos dizer para quebrar os ovos antes de adicionar, mesmo que isso esteja implicito para nos, humanos
+  - 
 
 ## Variáveis
 
