@@ -36,3 +36,7 @@
 var
   identificador: tipo
 ```
+
+- ARRAY: é um conjunto de dados , normalmente entre "[ ]"
+- objeto: normalmente é entre ( )
+
