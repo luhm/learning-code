@@ -5,5 +5,24 @@
   - acessa por url
 - website: é um conjunto de páginas
   - é mais complexo
-  - 
-
+- SITE:
+  - estático:
+    - a página não muda a não ser que cliquemos em algo
+  - dinâmico:
+    - a página se adapta à informações que voce colocar
+    - típico de sites após logins
+    - normalmente se conecta com banco de dados e depois entrega a resposta pro usuário
+- APLICATIVO WEB
+  - um programa que vive em servidor
+  - é usado em navegador
+  - parece uma página, mas é mais complexo
+  - é tipo um programa, complexo, mas que não precisa baixar e instalar
+- TRADITIONAL WEB APPLICATION
+  - toda vez que uma requisição é feita, recarrega toda a página
+  - `wordpress`
+- SINGLE PAGE APPLICATION
+  - uma unica página, recebe uma unica vez o html, css, js
+  - quando precisa um novo pedido, ele devolve a resposta sem atualizar toda a página de novo, apenas aquela parte que foi alterada
+  - por exemplo quando adiciona ou deleta um usuario
+  - `react`
+- 
