@@ -44,7 +44,7 @@
 - alguns são globais e outros em tags específicas
 - normalmente a sintaxe é:
   - ```html
-    <tag> atributo="valor" </tag>
+    <tag atributo="valor"> </tag>
     ```
 - Document Object Model (DOM)
   - é a representação em dados da estrutura e conteúdo do HTML
