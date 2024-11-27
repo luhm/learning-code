@@ -17,6 +17,35 @@
   - <div> é uma tag para caixa, genérica, sem estilo específico
 - Identação: é aquela visualização do código um pouco recuado
 
+## Tipos de elementos
+
+- Non-replaced:
+  - eles são de texto (e podem ter outras tags dentro dele, como as que deixam o texto itálico)
+  - não dá para substituir
+  - normalmente tem tags de abertura e fechamento
+- Replaced:
+  - são substituidos por objetos, como imagens
+  - alguns são também void elements, alguns não
+- Void elements:
+  - não precisam de fechamento
+  - não podem conter texto
+  - não tem elementos acumulados dentro deles
+  - pode finalizar com uma / sozinha
+    - é algo antigo de se fazer, mas pode ajudar a leitura do codigo
+  - exemplos: `<br>`, `<img>`, `<link>`
+
+## Atributos
+
+- são caracteristicas que podem ser adicionadas aos elementos
+  - cores, funcionalidades como links, comportamentos
+![image](https://github.com/user-attachments/assets/3c11c543-fb51-4b04-b355-f9ab635d8326)
+- alguns são globais e outros em tags específicas
+- normalmente a sintaxe é:
+  - ```html
+    <tag> atributo="valor" </tag>
+    ```
+
+
 ## links legais
 
 [WebDev](https://web.dev/learn/html])
