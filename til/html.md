@@ -1,5 +1,7 @@
 # HTML
 
+- semantica é o papel do elemento
+  - é importante para tecnologia assistivas e para alguns sistemas de busca
 - Elemento HTML = tags: é uma markup, uma marcação específica com alguma função
   - por exemplo, criar alguma coisa
     - sintaxe (como escrever) da tag:
@@ -44,7 +46,8 @@
   - ```html
     <tag> atributo="valor" </tag>
     ```
-
+- Document Object Model (DOM)
+  - é a representação em dados da estrutura e conteúdo do HTML
 
 ## links legais
 
