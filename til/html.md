@@ -73,12 +73,16 @@
       - o uso de `rel` significa o tipo de relação que será feita naquele link, tipo a relação de style com stylesheet
         - | It's preferable to include those related to meta information in the head and those related to performance in the <body>.
         - [lista dos 25 tipos de relação](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
-    - ícone da tab do brouser
+    - ícone da tab do browser
+      - value `icon`
       - `<link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="/images/mlwicon.png" />`
-    - 
+    - representações alternativas do site
+      - value `alternate`
+      - `<link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />`
+      - `<link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />`
 
 
-## links legais
+## Links legais
 
 [WebDev](https://web.dev/learn/html])
 
