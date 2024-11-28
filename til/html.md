@@ -67,9 +67,15 @@
     - `title`: é o que aparece na tab do site
     - `viewport`: `<meta name="viewport" content="width=device-width" />`
       - enables controlling a viewport's size and scale, and prevents the site's content from being sized down to fit a 960px site onto a 320px screen
-    - `<link rel="stylesheet" href="styles.css">`
+    - estilo
+      - `<link rel="stylesheet" href="styles.css">`
       - para incluir css e estilos e dizer pro nosso html qual estilo ele vai usar
-      - 
+      - o uso de `rel` significa o tipo de relação que será feita naquele link, tipo a relação de style com stylesheet
+        - | It's preferable to include those related to meta information in the head and those related to performance in the <body>.
+        - [lista dos 25 tipos de relação](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
+    - ícone da tab do brouser
+      - `<link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="/images/mlwicon.png" />`
+    - 
 
 
 ## links legais
