@@ -49,6 +49,29 @@
 - Document Object Model (DOM)
   - é a representação em dados da estrutura e conteúdo do HTML
 
+## Estruturas
+
+- `<!DOCTYPE html>`: diz pro browser qual o tipo de codificação/documento
+- `<html>`: é a tag que abre o documento
+  - pai do `<head>` e do `<body>`
+  - `lang`: atributo que diz qual o idioma
+    - enables screen readers, search engines, and translation services to know the document language
+    - pode ocorrer em outras partes da página, se mudar o idioma utilizado
+- `<head>`: document metadata header
+  - não tem o conteúdo visível
+  - infos necessárias:
+    - `charset`: character encoding;
+      - diz pro navegador quais o caracteres que usamos (inclusive emojis etc)
+      - usar mais comumente o UTF-8
+      - `<meta charset:"utf-8 />"`
+    - `title`: é o que aparece na tab do site
+    - `viewport`: `<meta name="viewport" content="width=device-width" />`
+      - enables controlling a viewport's size and scale, and prevents the site's content from being sized down to fit a 960px site onto a 320px screen
+    - `<link rel="stylesheet" href="styles.css">`
+      - para incluir css e estilos e dizer pro nosso html qual estilo ele vai usar
+      - 
+
+
 ## links legais
 
 [WebDev](https://web.dev/learn/html])
