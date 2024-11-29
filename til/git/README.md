@@ -4,7 +4,7 @@ This folder is part of my `Today I learned (TIL)` project, specifically the most
 
 My [TIL](https://github.com/luhm/learning-code/tree/main/til) project is part of my [learning-code](https://github.com/luhm/learning-code/tree/main) studies schedule and organization.
 
-Below you can find some interesting links on frontend that helps learn and practice.
+Below you can find some interesting links on git and github that helps learn and practice.
 
 ## Links
 
