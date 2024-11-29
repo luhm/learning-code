@@ -8,7 +8,6 @@
     - aba elements
     - compilado (DOM) de html
     - estilos
-    -  
 - editor
   - local
     - VS code
