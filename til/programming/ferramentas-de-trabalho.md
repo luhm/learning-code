@@ -5,7 +5,7 @@
   - local
     - VS code
     - bloco de notas (**NÃO RECOMENDADO!!**)
-    - front editor (online e básico)
+    - front editor (online e básico, salva tudo no navegador, é bem leve)
   - online
 - ferramentas
   - desenho
