@@ -18,4 +18,9 @@
   - anotações
     - NOTION
     - obsidian
+  - terminal
+    - git bash no windows - abre no proprio vscode
+  - documentação
+    - [mdn](https://developer.mozilla.org/en-US/)
+    - [devdocs](https://devdocs.io/)
 
