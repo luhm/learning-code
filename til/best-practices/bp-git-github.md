@@ -6,7 +6,7 @@
 -   não usar verbos flexionados (usar "fix bugs" e não "fixed bugs")
 - usar branches e uma workflow específica
   - gitflow é uma workflow interessante de usar
-- existem palavras que representam o tipo de commit que está sendo feito (aqui eu segui a [angular convention](https://www.conventionalcommits.org/en/v1.0.0/), indicada pelo site [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)):
+- existem palavras que representam o tipo de commit que está sendo feito (aqui eu segui a [angular convention](https://www.conventionalcommits.org/en/v1.0.0/), indicada pelo site [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
   - fix - um juste de bug/codigo
   - feat - uma nova feature no código
   - chore - é uma tarefa que foi completada
