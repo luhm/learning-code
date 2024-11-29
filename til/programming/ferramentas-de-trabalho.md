@@ -9,7 +9,13 @@
   - online
 - ferramentas
   - desenho
+    - tldraw
   - design - figma
-  - mapas mentais - whinsical
-  - anotações 
+    - colaborativo
+  - mapas mentais
+    - whimsical
+    - miro
+  - anotações
+    - NOTION
+    - obsidian
 
