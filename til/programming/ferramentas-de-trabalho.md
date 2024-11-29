@@ -1,6 +1,14 @@
 # Ferramentas e ambiente de trabalho de um Dev
 
 - Navegador
+  - DevTools
+    - no navegador
+    - F12
+    - inspect
+    - aba elements
+    - compilado (DOM) de html
+    - estilos
+    -  
 - editor
   - local
     - VS code
