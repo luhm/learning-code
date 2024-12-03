@@ -4,7 +4,7 @@ This is a repo where I share with you what I've learned while studying frontend 
 
 This will be a mix between **TIL (Today I Learned)** and **100 days {coding}**.
 
-The TIL methodology helps me to build my documentation and the 100 days {coding} challenge helps me remember that my studies have a practical part that is necessary and gives meaning to all theory I am studying.
+The TIL methodology helps me build my documentation and the 100 days {coding} challenge helps me remember that my studies have a practical part that is necessary and gives meaning to all theory I am studying. 
 
 ## TIL
 
@@ -19,3 +19,14 @@ The TIL methodology helps me to build my documentation and the 100 days {coding}
   - [Link-in-bio - DevLinks](https://luhm.github.io/rocketseat-discover/)
 - days 10 to 15:
   - [Recipe page](https://luhm.github.io/recipe_page_main/)
+
+## Internship
+
+Here is the link to the repository dedicated to my [internship at Brainwave Matrix Solutions](https://github.com/luhm/brainwave_matrix_intern).
+
+## RocketSeat
+
+Here is the link to my repository on several [RocketSeat courses](https://github.com/luhm/rocketseat) I've been dedicating myself to.
+
+## Santander Tech+ (ADA)
+
