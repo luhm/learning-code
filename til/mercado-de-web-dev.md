@@ -36,8 +36,12 @@
 - cientista:
   - mais perto do dado burto
   - explorando os dados
-  - IA
+  - IA, machine learning
   - organiza os dados para o analista
-- 
+- engenheiro de dados
+  - infra de dados
+  - fluxo de dados (de onde vem, onde estão armazenados)
+  - da aquisição até a disponibilização do dado para o cientista e o analista
+  
 
 
