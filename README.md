@@ -16,7 +16,7 @@ The TIL methodology helps me build my documentation and the 100 days {coding} ch
 ## 100 days {coding}
 
 - days 1 to 10:
-  - [Link-in-bio - DevLinks](https://github.com/luhm/rocketseat/tree/feat/projetodiscovery))
+  - [Link-in-bio - DevLinks](https://github.com/luhm/rocketseat/tree/feat/projetodiscovery)
 - days 10 to 15:
   - [Recipe page](https://luhm.github.io/recipe_page_main/)
 
