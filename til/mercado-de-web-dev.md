@@ -1,5 +1,8 @@
 # Entendimento do Mercado de Desenvolvedor web
 
+- é importante entender bem do negocio da empresa
+  - é um diferencial
+
 ## Frontend
 
 - linguagens: html, css, javascript
@@ -13,5 +16,14 @@
 
 - tem mais linguagens
 - ganha um pouco mais
+- dominar muito estrutura de dados
+- clean code
+- arquitetura de software
+
+## Full Stack
+
+- domina um pouco dos dois
+- ganha tipo um back ou um pouco mais
+- 
 
 
