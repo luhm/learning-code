@@ -24,6 +24,20 @@
 
 - domina um pouco dos dois
 - ganha tipo um back ou um pouco mais
+
+## Dados
+
+- dado é uma info a ser descoberta
+- nessa área, dados se transforma em informação, sendo interpretado
+  - vê o contexto do dado
+- analista:
+  - mais proximo do negocio, diretamente
+  - boa habilidade de comunicação com diversas áreas da empresa
+- cientista:
+  - mais perto do dado burto
+  - explorando os dados
+  - IA
+  - organiza os dados para o analista
 - 
 
 
