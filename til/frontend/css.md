@@ -166,5 +166,8 @@ p {
 - `list-style-position` diz se os marcadores estarão dentro ou fora da lista
   - pode ser outside ou inside
 - se quiser usar todos na mesma linha, a ordem é: type position image
-- 
-  - 
+
+## at-rules
+
+- são representadas por um arroba @
+- exitem dois tipos, statments and blocks
