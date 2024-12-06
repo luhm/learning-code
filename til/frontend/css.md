@@ -216,4 +216,6 @@ p {
 - estruturas bidimensionais complexas
 - controle de linhas e colunas ao mesmo tempo
   - típico para uma galeria de imagens
-- 
+- é como um layout de tabela
+  - `column-gap` e `row-gap` o espaço entre colunas ou linhas
+- [todas as propriedades do grid](https://www.w3schools.com/css/css_grid.asp) 
