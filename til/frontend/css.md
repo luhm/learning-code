@@ -171,3 +171,49 @@ p {
 
 - são representadas por um arroba @
 - exitem dois tipos, statments and blocks
+- [lista de at-rules](https://www.w3schools.com/cssref/css_ref_atrules.php)
+- instruem o CSS como agir
+- Statements:
+  - syntax
+    ```css
+      @identifier (RULE);
+    ```
+- block:
+  - possui nela um conjunto de regras
+  - podem se referir a animações, mudanças em cores (light e darkmode), 
+  - syntax
+    ```css
+      @identifier (RULE) {
+      }
+    ```
+
+## Flexbox e Grid
+
+- ajudam com a criação de designs responsivos
+- trazem flexibilidade
+- é possível combinar os dois:
+  - fazer uma página com um perfil de um lado e um conjunto de posts do outro
+  - ![image](https://github.com/user-attachments/assets/e74e2760-7dd9-4522-8466-dd0972a1d489)
+
+### Flexbox
+
+- alinhamento e distribuição flexiveis
+  - libera, dentro do css, "novas" regras que só funcionam se for flexbox
+- dentro de um container
+- organiza em colunas ou linhas
+  - `flex-direction`: row ou column
+  - `flex-wrap`: quebra a linha para que a quantidade de filhos flex exacerbar o layout da página
+  - se você colocar, em um filho flex, `flex: 1` ou outro número, significa que a distância entre os elementos dele será 1 (sem unidade mesmo), e igual pra todos
+    - se em um voce colocar 2 e deixar 1 nos outros, você tera um elemento ocupando o dobro do espaço.
+  - [`align-itens`](https://developer.mozilla.org/pt-BR/docs/Web/CSS/align-items) mexe no eixo transversal
+  - [`justify-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) 
+- bom pra fazer barras de menus e status
+- ![image](https://github.com/user-attachments/assets/be0c1d9e-7b96-49f8-be11-a397c4eaa293)
+
+
+### Grid
+
+- estruturas bidimensionais complexas
+- controle de linhas e colunas ao mesmo tempo
+  - típico para uma galeria de imagens
+- 
