@@ -102,6 +102,8 @@ p {
  
 - link interessante: [CSS Tricks](https://css-tricks.com/)
 
+![alt text](image.png)
+
 ## Pseudo-elements
 
 - são elementos para estilizar apenas uma parte do código, por exemplo a primeira letra da palavra/frase

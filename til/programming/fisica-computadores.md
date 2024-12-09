@@ -57,6 +57,42 @@
   - ![image](https://github.com/user-attachments/assets/51943aa4-c906-4c51-9809-ecd971d8a8c8)
   - xor
   - ![image](https://github.com/user-attachments/assets/7425c6ff-d6b7-434d-9d56-73eb60554a8c)
+- assim como nós usamos base numerica decimal, com 10 algarismos numericos e depois eles se repetem, o computado usa apenas dois algarismos (0 e 1), os dos transistores
+  - na imagem abaixo, 20 é o mesmo que 2^0
+  - ![alt text](image.png)
+  - soma binária:
+    - ![alt text](image-1.png)
 
+## Linguagens de programação
 
-
+- Assembly
+  - baixo nível
+  - funcionamento do computador
+  - muda de acordo com a arquitetura do computador
+- Python
+  - alto nível
+  - mais próximo do ser humano
+- C
+  - foi considerada de alto nível
+  - antiga
+  - trabalha proximo do sistema operacional
+- compilação
+  - compila a cada atualização
+  - transforma a linguagem em baixo nível
+- interpretação
+  - não traduz todo o seu programa
+  - carrega o codigo de alto nível no interpretador que diz pro pc o que fazer
+  - JS, Java
+  - pode ter algumas ferramentas do compilador
+- bibliotecas de códigos prontos
+  - estabilidade de código
+  - diminui tempo
+- sistemas embarcados:
+  - sistemas que controlam outros sistemas/computadores
+  - exigem maior segurança e cuidado
+  - arduíno
+    - prototipagem do sistema final
+    - é um "minicomputador"
+- O infinito é um problema na computação pois o computador não consegue trabalhar direito com números muito grandes, o que exige muita memoria e processamento
+  - por isso se usa o numero flutuante, que voce coloca quantas casas decimais ele vai considerar para fazer esses calculos
+  
