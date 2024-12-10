@@ -81,6 +81,10 @@
       - `<link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />`
       - `<link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />`
 
+## Tags interessantes
+- `<b>` deixa negrito, porém `strong` é uma tag que possibilita que os mecanismos de busca e leitura/acessibilidade compreendam e deem destaque a essa palavra também
+  - strong tem uma força semântica no html, mostrando que é um texto forte, de importância
+- `<em>` é uma tag que significa emphasys e substitui `<i>`, de itálico
 
 ## Links legais
 
