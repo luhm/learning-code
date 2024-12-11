@@ -10,13 +10,17 @@
   - atributos
     - informações extras/configurações
     - sintaxe do atributo:
-      - <(nome da tag) (atributo)=”conteudo do atributo”>conteúdo da tag</tag>
+      ```html
+      <(nome da tag) (atributo)=”conteudo do atributo”>conteúdo da tag</tag>
+      ```
     - quando for uma tag com atributo sem conteúdo escrito (por exemplo, uma imagem, com um link direto), aí não precisa tudo isso, só finalizar ela nela mesma
-      - <(nome da tag) (atributo)=”conteudo do atributo” />
+      ```html
+      <(nome da tag) (atributo)=”conteudo do atributo” />
+      ```
     - Quando o atributo for id=”nome”, não pode ter outra tag com esse mesmo atributo+conteúdo
 - Muitas coisas podem ser estruturadas em caixas
   - podem ter várias caixas dentro de caixas
-  - <div> é uma tag para caixa, genérica, sem estilo específico
+  - `<div>` é uma tag para caixa, genérica, sem estilo específico
 - Identação: é aquela visualização do código um pouco recuado
 
 ## Tipos de elementos
@@ -81,10 +85,61 @@
       - `<link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />`
       - `<link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />`
 
-## Tags interessantes
+## Tags de estilização do texto
+
 - `<b>` deixa negrito, porém `strong` é uma tag que possibilita que os mecanismos de busca e leitura/acessibilidade compreendam e deem destaque a essa palavra também
   - strong tem uma força semântica no html, mostrando que é um texto forte, de importância
 - `<em>` é uma tag que significa emphasys e substitui `<i>`, de itálico
+- `<u>` é sublinhado, mas não é indicado
+  - é mais indicado usar o css, colocando o texto alvo do estilo dentro da tag `<span>` 
+- `s` riscado
+- `mark` destaca um texto, tipo um marcatexto
+- `pre` é uma tag que adiciona um texto pre-formatado como código
+- `code` insere um código em linha, tipo o que `` faz em markdown
+- `blockquote` coloca um bloco de citação
+- `sup` e `sub`na parte superior ou inferior
+
+## Tags semânticas
+
+- vão dentro do `body`
+  - elas não mudam estilo, mas a semântica da página
+  - o estilo delas é alterado no css
+- `header` - cabeçalho da página
+  - dentro dele colocamos a tag `nav` que indica uma barra de navegação
+- `main` - conteúdo principal
+  - `section` - faz seções
+  - `article` - é tipo o artigo de um blog
+    - pode colocar dentro dela as divisões de `header`, `main` e `footer`
+- `aside` - uma parte do conteúdo principal que fica ao lado do main
+  - pode ser colocado dentro ou fora da tag `main`
+- `footer` - rodapé
+- `figure` é uma tag semantica que indica que ali há imagens
+  - pode colocar várias imagens dentro dessa tag
+  - pode colocar `figcaption` que coloca uma legenda
+
+## Tabelas
+
+- inicia com `table`
+- `th` ou `thead` para os cabeçalhos da tabela
+- `tb` ou `tbody` para o corpo da tabela
+- `tr` (table row) para fazer uma linha da tabela
+- `td` (table data) para fazer as colunas
+- dentro de tr ou td, usar o atributo `rowspan` e o numero de linhas ele vai pegar
+  - aí, quando ele tá tipo `rowspan = "3"`, a gente pode apagar aquela informação das linhas seguintes
+  - para mesclar colunas é `colspan`
+
+## Formulários
+
+- `form` dentro do `body`
+- `input` é a primeira e muito importante, ela tem muitas propriedades e ela não tem fechamento
+  - **boas praticas**: colocar ela dentro de um div que contenha também uma tag `label` que coloca um atributo `for="(aqui coloca para que é essa label, usando id no input)"`
+  - propriedade padrão dela é o atributo `type="text"`
+  - `placeholder="coloca o texto que aparece dentro da caixa de texto quando ninguem escreve nela"`
+  - `name` é o atributo que adiciona o nome pelo qual o JS vai reconhecer esse campo do Formulário
+- `type` de `input`
+  - password - já oculta os caracteres
+  - email - semanticamente já deixa claro que ali é um email e precisa de @
+  -
 
 ## Links legais
 
