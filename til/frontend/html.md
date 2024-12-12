@@ -139,7 +139,28 @@
 - `type` de `input`
   - password - já oculta os caracteres
   - email - semanticamente já deixa claro que ali é um email e precisa de @
-  -
+  - number
+  - date
+  - time
+  - file - escolhe um arquivo para carregar
+  - url
+  - color
+  - range - cria uma barra horizontal onde voce arrasta uma bolinha pra preencher parte da barra
+    - padrão de 0 a 100
+    - pode definir o máximo e o mínimo
+  - checkbox - marca uma caixinha onde pode marcar mais de uma
+  - radio - é a checkbox com escolha unica
+  - textarea - cria uma box de texto para a pessoa escrever algo
+  - select - abre uma caixinha de seleção
+    - dentro dela deve ter a tag `option` para cada opção
+    - a tag `option` tem um `value` que deve ser o nome referente dela que aparecera quando enviar o formulário
+    - dentro da tag soloca o nome que aparece para o usuário
+    - para colocar uma opção "título", por exemplo **selecione uma opção**, é só criar essa opção no select e, dento da tag, colocar o atributo `disabled` e o `selected`
+  - reset - um botão que limpa o que voce já escolheu
+    - se colocar `value="algo"` altera o nome do botão para "algo"
+  - submit - cria um botão para enviar o Formulário
+    - ele envia o formulário e recarrega a página com as informações na url se na tag `form` lá no início, o atributo `action=""` estiver vazio ou sem ele especificado
+
 
 ## Links legais
 

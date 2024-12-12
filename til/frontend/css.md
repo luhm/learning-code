@@ -104,6 +104,20 @@ p {
 
 ![alt text](image.png)
 
+## detalhes de estilização
+
+### Background
+
+- **size**: ajusta o tamanho, e se eu colocar cover, ele ocupa todo o espaço que está indicado naquele container
+  - precisa ter `widht` e `height` indicados
+- **attachment**: muda a relação entre a imagem e o scroll da página
+  - se colocar `fixed`, por exemplo, ela fica fixa e parece que o texto está passando por cima da imagem
+
+### Text
+
+- **transform**: deixa tudo `uppercase`, `lowercase`, `capitalize` (first letter)
+- **ident**: coloca recuo de primeira linha
+
 ## Pseudo-elements
 
 - são elementos para estilizar apenas uma parte do código, por exemplo a primeira letra da palavra/frase
