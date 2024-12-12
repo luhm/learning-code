@@ -104,7 +104,7 @@ p {
 
 ![alt text](image.png)
 
-## detalhes de estilização
+## Detalhes de estilização
 
 ### Background
 
@@ -117,6 +117,59 @@ p {
 
 - **transform**: deixa tudo `uppercase`, `lowercase`, `capitalize` (first letter)
 - **ident**: coloca recuo de primeira linha
+- `cursor: pointer` faz o mouse virar aquela mãozinha sinalizando que pode clicar
+
+### Visibilidade
+
+- `display:none` - some o elemento da página, inclusive o local que ele ocupava não se mantém
+- `visibility: hidden` - some o elemento, mas o espaço que ele ocupava na tela se mantém
+- `opacity: 0` faz com que ele fique transparente, mas todas as habilidades dele, por exemplo se for um link o botão, se mantenham e seu espaço na página também
+- `transform` muda a forma do elemento, por exemplo girando (`rotate xdeg`), mudando para baixo ou para cima (`translateY: xrem`)
+  - fundamental para fazer animações
+  - usar `transition` no elemento normal para que ele faça transições suaves nessas animações
+
+### Tamanhos
+- px é uma unidade fixa, ela não altera conforme o navegador altera etc
+- se colocar o tamanho do texto em porcentagem, ele vai se basear o percentual no tamanho classico que o navegador usa (costuma ser 16px)
+- se usar a unidade `rem`, ela é o valor em pixel/10
+  - então se eu estiver usando 40px, seria 4.0rem; 92px seria 9.2rem
+  - rem é uma unidade flexivel, que se adapta às questões de acessibilidade do usuário
+- as unidades `vw` (pra widht) e `vh` (para height) pegam o tamanho inteiro da janela, mas isso pode fazer extrapolar o tamanho do container
+  - usando `rem` ele respeita o tamanho do container pai
+
+### Posições
+
+- o padrão é `position:static` e ai não pode alterar os lados
+- `position:absolute;` faz o elemento ficar por cima de tudo, pois ele sai do conjunto de elementos da página
+  - pode ficar em cima de texto, de imagem etc
+  - pode colocar a posição dele usando `top` `right` `bottom` `left`
+- se usar `position:fixed` ele fica fixo na tela, mesmo que voce mexa ela pra cima e pra baixo, ele se mantem ali aparecendo
+- `z-index` ???
+- `position:sticky` faz com que o elemento fique aparecendo na tela quanto o box dele está sendo scrollado
+  - precisa ter uma definição de `top`
+- `float` não se usa mais hoje em dia
+
+### Ícones fa
+
+- atributo `fa` dentro da tag `<i>` ou na tag `<span>` faz aparecer simbolos referentes a basic icons
+  ```html
+  <i class="fa fa-car"></i>
+  ```
+- podem ser usados também em listas
+  ```html
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+  </ul>
+  ```
+- `fa-spin` dentro da classe faz qualquer elemento rodar
+  ```html
+  <i class="fa fa-spinner fa-spin"></i>
+  ```
+- outras:
+  - `fa-flip`
+  - `fa-rotate`
+  - `fa-stack` class on the parent, the `fa-stack-1x` class for the regularly sized icon, and `fa-stack-2x` for the larger icon - faz um ficar dentro do outro
+- [ver mais ícones aqui](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
 
 ## Pseudo-elements
 
@@ -175,6 +228,18 @@ p {
 `::marker`
 - altera os marcadores de uma lista
 
+## Pseudo-class
+
+- `:visited` funciona em um link, e muda a cor dele quando ele ja foi clicado
+- `:hover` é o que ocorre quando passa o mouse em cima daquele elemento
+  - precisa vir depois do `a {}` normal e depois do `a:visited{}` se não ele sobrescreve
+- `:first-child` é apenas a primeira vez que aquele elemento aparece
+  - `:nth-child ()` se refere a qualquer elemento (n) começando no zero
+    - se dentro dos () colocar `(n + 1)`, quer dizer que é 0+1 que é = 1
+    - se colocar `(n + 2)` quer diquei que inicia no 2º elemento
+    - numa tabela, se quiser alternado, é só colocar um multiplicador no n, ficando, por exemplo, `(2n + 2)`
+
+
 ## Listas
 
 - `list-style-type` é uma propriedade que altera o tipo de marcador, círculo, quadrado, numeros romanos etc
@@ -202,6 +267,41 @@ p {
       @identifier (RULE) {
       }
     ```
+
+### Animações
+
+- `@keyframes` é usada para que a gente possa criar ações de que o elemento fará na tela
+  - é só colcoar `@keyframes nome {}`, onde `nome` é o nome da animação que voce vai referenciar la no elemento
+  - dentro dela, colocar
+  ```css
+  @keyframe nome {
+    momentoX {
+      o que acontece no início
+    }
+    momentoY {
+      o que acontece no final
+    }
+  }
+  ```
+  - e aí no proprio elemento colocar `animation: nome`
+  - um exemplo de pulsar
+  ```css
+  @keyframe pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: .6;
+    }
+  }
+  ```
+  - referenciada no elemento:
+  ```css
+  animation: pulse 2s infinite
+  ```
+  - se usar `animation-direction:alternate` ele vai fazer o indicado no @keyframes dessa animação tanto na ida quando na volta dela
 
 ## Flexbox e Grid
 
@@ -235,3 +335,8 @@ p {
 - é como um layout de tabela
   - `column-gap` e `row-gap` o espaço entre colunas ou linhas
 - [todas as propriedades do grid](https://www.w3schools.com/css/css_grid.asp) 
+- é bom usar `fr` que é uma unidade flexível, e não fixa
+
+![alt text](image-1.png)
+- onde `page-content` está em `display:grid`
+- tags `header`, `main` e `footer` estão com `grid-area` title, login, footer respectivamente
