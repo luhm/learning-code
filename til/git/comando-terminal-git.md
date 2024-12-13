@@ -30,6 +30,11 @@
   - pode acelerar usando **git commit -a -m “mensagem”** (já adiciona e commita)
   - para ajusta o ultimo commit sem fazer um novo: **git add .** > **git commit --amend -m “mensagem”**
   - **Boas práticas** em mensagens de commit: dar pistas do que foi mexido
+- `git diff` é um comendo que mostra as diferneças entre o documento do servidor remoto e do servidor local, como uma extensão do `git status`
+- `git log` apresenta o historico dos commits que foram feitos
+- `git restore` volta ao arquivo como se ele não fosse modificado
+- `git pull` puxa do remoto para o local e já modifica o seu arquivo
+  - `git fetch` puxa as coisas diferentes do remoto, sem atualizar o local, aí voce consegue visualizar as mudanças antes de mergear
 - Os comandos rebase e merge são muito parecidos
   - merge junta tudo, incluindo os commits
   - rebase copia um no outro mas traz apenas os comits que voce quiser, ou sej, fica sem histórico
