@@ -12,4 +12,10 @@ Below you can find some interesting links on frontend that helps learn and pract
 
 [FrontEnd Editor](https://www.fronteditor.dev/conceitos-html)
 
+[Preparação para entrevistas de front](https://www.greatfrontend.com/)
+
 [Trilha de Front](https://linkinbio.com.br/new/links_isaac)
+
+[The Odin Project - trilha de front](https://www.theodinproject.com/paths/full-stack-javascript)
+
+[Biblioteca Math de JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
