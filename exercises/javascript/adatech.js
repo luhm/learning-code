@@ -58,6 +58,23 @@ console.log("raiz quadrada de", numeroX, "=", raizQuadrada) //aqui unindo texto 
 
 // console.log("o usuário tem", idadeDoUsuario, "anos de idade")
 
-const anoDeNascimento = prompt.question("Em que ano você nasceu?")
+//const anoDeNascimento = prompt.question("Em que ano você nasceu?") //não funcionou
 
-console.log("o usuário nasceu em", anoDeNascimento)
+//console.log("o usuário nasceu em", anoDeNascimento)
+
+//coersão de tipos
+
+console.log(2+3+4+"5") //ele soma os primeiros até que nao da mais para somar e aí ele vira texto
+
+console.log("5"+2+3+4) //como o primeiro ja é string, ele tranforma todos os outros
+
+console.log(5-2-"2") //ele retorna 1, transformando tudo em numero
+
+console.log(5-2-2+"5") //ele retorna 15
+
+//booleanos
+
+let numberA = 10
+let numberB = 15
+
+console.log(numberA == numberB)

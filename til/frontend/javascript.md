@@ -19,6 +19,22 @@
 - **tipagem fraca**: facilmente se confunde nos tipos, misturando textos e numeros
     - não retorna um erro
     - diferente do TS, que é mais forte
+- **coerção de tipos**:
+   - ele converte de numero para texto e para booleano (onde apenas o 0 retorna false, qualuqer outro numero retorna true)
+   - se tentar converter texto para numero, ele não vai dar erro, mas vai aparecer a msg NaN (Not a Number)
+   - explicita/manual: voce muda o tipo da variável usando a formula 
+    ```javascript
+    const nome = Novotipo(o que ele vai entregar)
+    ex:
+    const numeroDaIdade = Number(idade)
+    ```
+    - implícita: ele faz automaticamente
+        - se tentar somar um numero com uma string, ele transforma tudo em string
+        ```javacript
+        console.log(1+"1")
+        retorna 11
+        ```
+        - se não for soma, ele transforma o string em numero e faz a operação normal
 - é **case sensitive**: não pode escrever com letra maiúscula, não devolve a mesma coisa
 
 ## Criando variáveis
@@ -37,6 +53,13 @@
     - usa ** para fazer potencia
     - usa % para inficar resto de uma divisão
 - usa uma biblioteca chamada [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+## Operadores booleanos
+
+- fazem comparações
+- usamos dois simbolos de igual `==`para comparar se são iguais
+    - um simbolo só é a atribuição que fazemos nas variaveis
+
 
 ## Bibliotecas
 
