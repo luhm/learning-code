@@ -41,3 +41,12 @@
 ## Bibliotecas
 
 - a palavra/comando `require` é usado para importar bibliotecas no JS
+
+## DOM
+
+- Document Object Model
+- é a organização da estrutura da página que faz com que o JavaScript leia o HTML
+- é uma árvore de objetos da página
+    ![alt text](image-2.png)
+- os elementos HTML são vistos como objetos
+- possibilita o crud do html

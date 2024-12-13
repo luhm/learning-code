@@ -1,3 +1,5 @@
+const readlineSync = require("readline-sync")
+
 console.log("Olá!")
 
 var nomeDaPessoa = "Luhm"; //camelCase e variável string (texto)
@@ -49,11 +51,13 @@ console.log("raiz quadrada de", numeroX, "=", raizQuadrada) //aqui unindo texto 
 
 // usando prompt - deu certinho, só comentei pra não ficar aparecendo a caixa toda toda kkkkk
 
-const anoDeNascimento = prompt("Em que ano você nasceu?")
+//const anoDeNascimento = prompt("Em que ano você nasceu?")
 // const idadeDoUsuario = 2024 - anoDeNascimento
 
-console.log("o usuário nasceu em", anoDeNascimento)
+//console.log("o usuário nasceu em", anoDeNascimento)
 
 // console.log("o usuário tem", idadeDoUsuario, "anos de idade")
 
+const anoDeNascimento = prompt.question("Em que ano você nasceu?")
 
+console.log("o usuário nasceu em", anoDeNascimento)
