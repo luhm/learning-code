@@ -1,10 +1,15 @@
-let numberA = 10
-let numberB = 15
+const permissao = "professor" // "aluno" || "professor" || "admin"
 
-console.log(numberA === numberB) //ele retorna falso - usar sempre ===
-
-console.log(numberA !== numberB) //ele retorna true - compara valor e tipo
-
-console.log(numberA >= 12 && numberB >=12)
-
-console.log(numberA >= 12 || numberB >=12)
+switch(permissao){
+    case "aluno":
+        console.log("Voce tem acesso apenas às aulas.")
+        break
+    case "professor":
+        console.log("Voce pode alterar as aulas e datas das avaliaões.")
+        break
+    case "admin":
+        console.log("voce possui todas as permissões.")
+        break
+    default:
+        console.log("Voce não possui nenhuma permissão")
+}

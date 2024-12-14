@@ -30,7 +30,7 @@
     ```
     - implícita: ele faz automaticamente
         - se tentar somar um numero com uma string, ele transforma tudo em string
-        ```javacript
+        ```javascript
         console.log(1+"1")
         retorna 11
         ```
@@ -58,8 +58,34 @@
 
 - fazem comparações
 - usamos dois simbolos de igual `==`para comparar se são iguais
-    - um simbolo só é a atribuição que fazemos nas variaveis
+    - compara apenas o valor
+    - `===`compara valor e tipo - **É UMA BOA PRÁTICA**
+    - `=` simbolo só é a atribuição que fazemos nas variaveis
+- usamos `!==` para falar de serem diferentes
 
+### Conjunções logicas
+
+- junta duas operacoes booleanas
+- `&&`é o operador para AND
+- `||`é o operador para OU
+- se precisarmos imprimir um valor mas quisermos o oposto dele, é só colocar um `!`na frente
+    - inverte a operação
+    ```javascript
+    console.log(!true)
+    vai retornar falso
+    
+    console.log(numeroX >=18)
+    ve se é maior de 18 e retorna verdadeiro
+
+    console.log(!numeroX>=18)
+    ve se é menor de 18
+    ```
+## Controle de fluxo e condicionais
+
+-   o fluxo de execucao normal é uma linha depois da outra
+- if/else
+    - a estrutura é 
+    ```
 
 ## Bibliotecas
 
