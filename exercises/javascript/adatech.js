@@ -87,11 +87,41 @@ console.log(numberA >= 12 || numberB >=12)
 
 //condicionais e controle de fluxo
 
-const idadePessoa1 = Number(prompt("Qual a sua idade?"))
+// const idadePessoa1 = Number(prompt("Qual a sua idade?"))
 
-const ehMaiorDeIdade = idade >= 18
+//const ehMaiorDeIdade = idade >= 18
 
-if (idade >= 18) {
-    console.log("voce é maior de idade!")
+const idade = 15
+
+//if (idade >= 18) {
+//    console.log("voce é maior de idade!")
+//} else {
+//    console.log("voce é menor de idade...")
+//}
+
+if (idade < 18) {
+    console.log("voce deve ir ao pediatra!")
+} else if (idade >= 18 && idade < 60) {
+    console.log("voce deve ir a um medico especialista regular!")
+} else {
+    console.log("voce deve ir a um geriatra!")
+}
+
+// switch...case
+
+const permissao = "professor" // "aluno" || "professor" || "admin"
+
+switch(permissao){
+    case "aluno":
+        console.log("Voce tem acesso apenas às aulas.")
+        break
+    case "professor":
+        console.log("Voce pode alterar as aulas e datas das avaliaões.")
+        break
+    case "admin":
+        console.log("voce possui todas as permissões.")
+        break
+    default:
+        console.log("Voce não possui nenhuma permissão")
 }
 

@@ -84,8 +84,35 @@
 
 -   o fluxo de execucao normal é uma linha depois da outra
 - if/else
-    - a estrutura é 
+- switch...case
+    - util quando a variável tem valor específico
+    ```javascript
+    switch(var){
+        case ...
+            break
+        case ...
+    }
     ```
+- operador ternário
+    - para quando a condicao if/else for muito simples
+    ```javascript
+    const idade=18
+    idade >= 18 ? se veradeira : else
+    ```
+    - a interrogaao é como se fosse o if e os dois pontos representam o else
+    - é possivel colocar dentro de uma variável, por exemplo:
+    ```javascript
+    cont idade = 18
+    const mensagem = idade >= 18 ? "tudo certo!" : "aguarde fazer 18 anos!"
+    ```
+
+### Truthy or falsy
+
+- sao valores que podem ser considerados verdadeiros ou nao
+    - um numero, por si só, é verdadeiro
+    - um espaço vazio, é por si só, falso
+- falsy: `0`, `undefined`, `null`, `""`, `NaN`
+- todos os outros sao truthy
 
 ## Bibliotecas
 
