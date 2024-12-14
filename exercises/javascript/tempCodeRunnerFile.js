@@ -1,15 +1,3 @@
-const permissao = "professor" // "aluno" || "professor" || "admin"
-
-switch(permissao){
-    case "aluno":
-        console.log("Voce tem acesso apenas às aulas.")
-        break
-    case "professor":
-        console.log("Voce pode alterar as aulas e datas das avaliaões.")
-        break
-    case "admin":
-        console.log("voce possui todas as permissões.")
-        break
-    default:
-        console.log("Voce não possui nenhuma permissão")
-}
+setTimeout(()=>{
+    console.log("isso será executado após 5segundos!")
+}, 5*1000) //essa funcao tem um callback e um tempo para ele ser executado, que é em mmilissegundos, por isso multiplica os segundos por mil

@@ -1,5 +1,7 @@
 const fs = require("fs")
 
+console.log ("msg ANTES da funcao de ler o arquivo")
+
 //essa é uma funcao assincrona
 //fs.readFile("./adatechtest.txt")
 
@@ -11,3 +13,5 @@ fs.readFile("exercises/javascript/adatechtest.txt", (erro, conteudoDoArquivo) =>
         console.log(String(conteudoDoArquivo)) //ele retorna por padrao em buffer, uma forma de ler o arquivo, entao é melhor indicar que retorne em string
     }
 })
+
+console.log("msg DEPOIS da funcao de ler o arquivo")
