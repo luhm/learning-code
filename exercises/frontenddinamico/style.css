@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    color: rgb(50, 50, 50);
+    margin: 1rem;
+}
+
+h1 {
+    margin: 1rem 2rem;
+}
+
+p {
+    color: blueviolet;
+}

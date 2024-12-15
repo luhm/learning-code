@@ -156,12 +156,7 @@ function(x){
 
 ## DOM
 
-- Document Object Model
-- é a organização da estrutura da página que faz com que o JavaScript leia o HTML
-- é uma árvore de objetos da página
-    ![alt text](image-2.png)
-- os elementos HTML são vistos como objetos
-- possibilita o crud do html
+
 
 ## JSON
 
@@ -223,11 +218,34 @@ function(x){
 - API rest nao é a unica, podem ter apis do proprio navegador
     - aquelas caixinhas que aparecem perguntando se pode enviar notificacoes, é uma api do browser (notification API)
 
+### Browser APIs
+
+- DOM:
+    - Document Object Model
+    - é a organização da estrutura da página que faz com que o JavaScript leia o HTML
+    - é uma árvore de objetos da página
+    ![alt text](image-2.png)
+    - os elementos HTML são vistos como objetos
+    - possibilita o crud do html
+    - favorece a representacao do html em nós e objetos
+    - permite ser acessada por JS
+    - árvore de elementos
+    - para acessar por meio do JS precisamos colocar `document.oQueQueremos`
+
+
 ### Consumo de APIs
 
 - fetch API
     - uma api do browser para fazer requisicoes para APIs via HTTP
-    
+
+## Selecionar elementos HTML no JS
+
+- `document.getElementsByTagName("tagDoElementoHtml")` - pega todos os elementos com aquela tag
+- `document.getElementsBayClassName("classeDoElemento")` - pega todos os elementos pela classe
+- tem também by name e by id (name é tipico de inputs/formularios)
+- se usar `.querySelector` podemos usar os seletores css como # pra Id e . pra class - **só pega um elemento, o primeiro**
+    - para pegar mais de um, usar `.querySelectorAll`
+- pode usar o html com `textContent` ou com `innerHTML`, da para pegar e também para alterar o conteudo daquela tag (textos de um paragrafo ou de um titulo, por exemplo)
 
 ## Paradigmas da programacao
 
