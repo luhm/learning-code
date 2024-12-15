@@ -150,6 +150,7 @@ function(x){
         }
     }
     ```
+    - podemos usar `json.stringfy` se quisermos transformar o conteudo de uma funcao em string de json
 - para instalar uma biblioteca pelo terminal, escrever: `npm install nomeDaBiblioteca`
     - se quiser colocar ela para ser apenas no periodo de dev e nao quando vai pro usuario, colocar `--save-dev` ou `-D`no final
 
@@ -188,6 +189,46 @@ function(x){
         - APIs
         ![alt text](image-3.png)
 
+## APIs
+
+- Application Programming Interface
+- se comunica com terceiros no seu codigo enviando um dado e recebendo outros em resposta
+    - cep dos correios
+    - google maps
+    - login com google
+- sempre consultar a documentacao para ver como funciona e as orientacoes
+- tipos:
+    - publicas ou abertas
+    - privadas ou internas
+    - APIs de parceiros
+- protocolos de APIs
+    - padronizam a troca de dados
+    - REST é o mais comum
+        - possui 6 restricoes
+        - usa protocolo HTTP e conexao cliente-servidor
+        - comunicacao stateless, que nao armazena info do cliente/requisicao
+        - pode usar cache
+        - padronizacoes
+        - sistema em camadas e hierarquias (backend)
+- caracteristicas
+    - protocolo HTTP e url base (onde as infos estao)
+    - formato de dados - normalmente vem em `JSON`, mas por vezes da pra escolher (xml, csv)
+    - **Schema**: um esquema de como seu dado vai ser entregue
+    - **autenticacao**: normalmente chave (APIKey) ou OAUTH
+    - **endpoint**: URL completa para um recurso específico
+        - quando o endpoint foir variavel de acordo com a escolha do usuario, podemos fazer uma funcao com isso e substituir no endpoint
+- testar apis:
+    - insomnia
+    - postman
+- API rest nao é a unica, podem ter apis do proprio navegador
+    - aquelas caixinhas que aparecem perguntando se pode enviar notificacoes, é uma api do browser (notification API)
+
+### Consumo de APIs
+
+- fetch API
+    - uma api do browser para fazer requisicoes para APIs via HTTP
+    
+
 ## Paradigmas da programacao
 
 - se refere a como o sistema roda o seu codigo
@@ -202,9 +243,58 @@ function(x){
 1. Callbacks
     - funcao/chamada de retorno
     - quando o resultado dela estiver pronto, quando ele for lido, aí entao executa a funcao que tem nele
-    - possui dois parametros - erro e conteudoDoArquivo
+    - possui dois parametros - `erro` e `conteudoDoArquivo`
 2. Promises
     - promessas - pode ser cumprido ou nao
-    - 
+    - um objeto no js que guarada essa promessa acima
+    - possui 3 estados
+        - pending - iniciada, mas pendente
+        - fullfilled - concretizada, sucesso
+        - rejected - rejeitada, erro
+    - uso:
+        - pegar dados do backend (funcao fetch, por exemplo)
+    - para criar uma nova, usar `new Promise`
+    ```javascript
+    const myPromise1 = new Promise(executor) //promise é com letra maiuscula porque é uma classe
+    //onde executor é a funcao que sera executada pelo construtor, e tem sempre dos parametros, resolve e reject
+    const myPromise1 = new Promise((resolve, reject) => {
+        resolve(1111)
+    }
+    )
+    ```
+    - para ela apresentar o conteudo da promise, usar `myPromise1.then`e o then ira retornar uma funcao `() => {}` onde  parametro que estará dentro dos parenteses é sempre o conteudo resolvido da promise criada
+        - para esse parametro, pode-se dar o nome que quiser
+        ```javascript
+        myPromise1.then((nomeDoParametroQueEuQuiser) => {
+            console.log("Aqui está sua resposta", nomeDoParametroQueEuQuiser)
+        })
+        ```
+        - para pegar o erro, usar `.catch`
+        - ao final, independente de dar certo ou nao, ele pode executar uma resposta usando `.finally`
+
 3. resolvendo promises usando async/await
     - essa coisa X é assincrona (estou avisando para o JS) e eu quero que voce espere para executar o que vem em seguida
+    - quando executamos uma funcao que possui coisas antes e depois dela, mas queremos esperar ela finalizar para entao continuar, colocamos `await` antes dela
+        - mas nao pode fazer isso no corpo do codigo, apenas dentro de uma funcao assincrona
+        - se colocar `async` antes de uma funcao, torna ela assincrona, e com isso é possivel colocar o `await`
+        ```javascript
+        await funcaoAsync () //nao funciona
+
+        async funcaoX () {
+            await funcaoAsync()
+        } //isso aqui funciona
+        ```
+        - para nao correr o risco de ter problema por causa de um erro na funcao que tem o await, usar `try {}, catch{}`
+        ```javascript
+        await funcaoAsync () //nao funciona
+
+        async funcaoX () {
+            try {
+                await funcaoAsync()
+            } catch(err) {
+                console.log("deu esse erro", err)
+            }
+        } //isso aqui funciona
+        ```
+
+

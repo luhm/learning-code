@@ -1,5 +1,6 @@
 const fs = require("fs")
 
+//CALLBACK
 //exemplo 1 - Leitura de arquivo
 
 console.log ("msg ANTES da funcao de ler o arquivo")
@@ -23,3 +24,7 @@ console.log("msg DEPOIS da funcao de ler o arquivo") //ele executou os dois cons
 setTimeout(()=>{
     console.log("isso foi executado após 5segundos!")
 }, 5*1000) //essa funcao tem um callback e um tempo para ele ser executado, que é em mmilissegundos, por isso multiplica os segundos por mil
+
+//PROMISES
+
+
