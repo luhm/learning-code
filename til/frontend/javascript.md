@@ -255,6 +255,7 @@ function(x){
 - é possivel adicionar eventos
     - a forma mais facil é adicionando um `addEventListener()` após um `element.`onde element pode ser, por exemplo, um botao do HTML
         - dentro dele, colocar primeiro o tipo de evento e depois qual a funcao que ele vai retornar (tipo um callback), por exemplo um alert (uma caixinha que abre na tela com uma msg)
+        - o tipo de evento `click`, é porque foi clicado; `input` é porque foi digitado
 
 ## Paradigmas da programacao
 
