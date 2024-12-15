@@ -56,3 +56,19 @@
 
 ## Utility types
 
+## POO no typescript
+
+### interfaces e implements
+
+- essa funcao nao tem no JS, só no TS e em algumas outras linguagens
+- ao declarar uma interface, ela vai ter atributos e/ou métodos específicos e obrigatorios
+    - se, ao criar uma nova classe, evocarmos essa interface, ela automaticamente reconhece que aqueles atributos específicos e obrigatorios da interface devem estar contidos na nova classe (mesmo que haja mais) --> é o que chamamos de implements
+    - a sintaxe fica `class NovaClasse Interface`
+- encapsulamento: usando a palavra `private` antes do atributo na nova classe, sendo o nome do atributo vem com _ antes `private _atributoPrivado:`; se colocar `readonly` aí consegue chamar pra ler, mas nao consegue chamar para alterar
+    - é possivel criar regras especificas para *quando* a pessoa vai conseguir acessar ou alterar aquele atributo fora do encapsulamento, chama-se accessor:
+    ```typescript
+    get atributoDaInterface {   //get é apenas para acessar e ver
+        return this._atributoPrivado   //usar set para alterar
+    }
+    ```
+
