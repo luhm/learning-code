@@ -246,6 +246,15 @@ function(x){
 - se usar `.querySelector` podemos usar os seletores css como # pra Id e . pra class - **só pega um elemento, o primeiro**
     - para pegar mais de um, usar `.querySelectorAll`
 - pode usar o html com `textContent` ou com `innerHTML`, da para pegar e também para alterar o conteudo daquela tag (textos de um paragrafo ou de um titulo, por exemplo)
+- se eu quiser pegar algo dentro de um input (tipo uma caixa de email de formulario), eu posso colocar `.value`
+- as vezes nao se usa o `document.` pois se usa dentro de qual elemento voce quer fazer aquela alteracao
+- exemplos criando um novo item no html
+    ![alt text](image-7.png)
+    ![alt text](image-8.png)
+
+- é possivel adicionar eventos
+    - a forma mais facil é adicionando um `addEventListener()` após um `element.`onde element pode ser, por exemplo, um botao do HTML
+        - dentro dele, colocar primeiro o tipo de evento e depois qual a funcao que ele vai retornar (tipo um callback), por exemplo um alert (uma caixinha que abre na tela com uma msg)
 
 ## Paradigmas da programacao
 
