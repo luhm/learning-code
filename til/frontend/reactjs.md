@@ -68,7 +68,50 @@
 
 - é uma variável que, especificamente, o react fica monitorando pra saber se mudou o estado dela e aí ele atualiza a renderizacao dela
 - ele nao fica monitorando todas se nao a renderizacao seria muito pesada e ele seria pouco performatico
-- dentro do constructor a gente cria uma variavel com `this.state`
+- dentro do constructor a gente cria um objeto com `this.state`
+    - a sintaxe disso é:
+    ```javascript
+    export class Nome extends ClasseAntiga.Component{
+        constructor() {
+            super()
+            this.state = { variavel }
+        }
+        render() {
+            return (
+            ...
+            this.setstate({ contador: this.state.contador mudançaQueQuerFazer})
+            )
+        }
+    }
+    ```
+## Formulario
+
+- pegar infos de um formulário:
+    - usando estados
+    - colocando no constructor, já tem o `this.state` e dentro ja tem uma variárel, mas pode ter 2 ou 3
+    - o `value` do campo do formulario vai ser `this.state.variavel`
+    - para pegar o evento de digitacao do usuário, é só colocar nos atributos do `input` do formulario, um atributo especifio `onChange` que terá uma funcao dentro dele
+        - aí usamos `(event) => [event.target.value]` como no exemplo mais complto abaixo
+    ![alt text](image-12.png)
+
+## Ciclo de vida
+
+- fluxo de renderizacao
+    - todas as etapas que o componente passa
+- auxilia na otimizacao
+- 3 fases:
+    - montagem
+    - atualizacao
+    - desmontagem
+- possuem métodos especificos para cada fase
+- métodos:
+    - montagem - construtor (sendo construido )
+        - `componenteWillMount`
+        - `componentDidMount`
+        - `render`
+    - atualizacao - render
+        - pode usar funcoes com condicionais if...else
+
 
 
 - [React JS - Documentary](https://www.youtube.com/watch?v=8pDqJVdNa44)

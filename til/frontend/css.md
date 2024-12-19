@@ -310,6 +310,8 @@ p {
 - é possível combinar os dois:
   - fazer uma página com um perfil de um lado e um conjunto de posts do outro
   - ![image](https://github.com/user-attachments/assets/e74e2760-7dd9-4522-8466-dd0972a1d489)
+- The CSS Grid Layout should be used for two-dimensional layout, with rows AND columns.
+- The CSS Flexbox Layout should be used for one-dimensional layout, with rows OR columns.
 
 ### Flexbox
 
