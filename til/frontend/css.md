@@ -8,7 +8,7 @@
   - seletor (usa uma tag, por exemplo body). ex:
 
     ```css
-    Seletor {
+    Seletor/tag {
     propriedade: valor;
     }
     ```

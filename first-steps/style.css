@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----USAR ABAIXO PARA ALGO GERAL------
+---QUANDO TEM A MESMA COR DE TEXTO OU DE FUNDO, FONTE, TAMANHO DE FONTE, POR EXEMPLO--- */
+
+body {
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/* -----USAR ABAIXO QUANDO FOR PASSAR DE MOBILE PARA DESKTOP----- */
+
+@media (min-width: 700px) {
+    /* COLOCAR AQUI AS MUDANÇAS */
+}
+

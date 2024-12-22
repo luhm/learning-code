@@ -97,7 +97,7 @@ function(x){
     ```
 ## Controle de fluxo e condicionais
 
--   o fluxo de execucao normal é uma linha depois da outra
+- o fluxo de execucao normal é uma linha depois da outra
 - if/else
 - switch...case
     - util quando a variável tem valor específico
