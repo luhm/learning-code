@@ -3,6 +3,10 @@ const fs = require("fs") //onde fs é o nome da biblioteca. FS é biblioteca do 
 const nome = "Luiza" //cria a variável
 console.log (nome) //retorna o que está naquela variável 
 
+// -----PUXAR DO HTML-----
+
+const textBox = document.querySelector("#textBox"); //onde textBox se refere à uma id do html, se for class, usar .
+
 // -----IF/ELSE-----
 
 const idade = 32 
@@ -35,8 +39,8 @@ switch(permissao){
 // -----PROMPT-----
 // ---PARA APARECER UMA CAIXINHA NA TELA DO USUÁRIO---
 
-const anoDeNascimento = prompt("Em que ano você nasceu?")
-console.log("o usuário nasceu em", anoDeNascimento)
+// const anoDeNascimento = prompt("Em que ano você nasceu?")
+// console.log("o usuário nasceu em", anoDeNascimento)
 
 // -----FUNÇÕES-----
 
@@ -44,6 +48,7 @@ function soma(param1, param2) {
     return param1 + param2
 }
 
-console.log(soma(1, 2))
+    soma(1, 2) //forma de evocar a funçao
+
 
  

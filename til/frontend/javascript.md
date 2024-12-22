@@ -62,6 +62,9 @@ function(x){
 }
 ```
 
+- function declaration:
+    - You are probably clear on this by now, but just in case, to actually use a function after it has been defined, you've got to run — or invoke — it. This is done by including the name of the function in the code somewhere, followed by parentheses.
+
 ## Operadores matemáticos
 
 - usa os operadores normais de soma, subt, divisão e multiplicação
