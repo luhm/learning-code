@@ -1,7 +1,7 @@
 const fs = require("fs") //onde fs é o nome da biblioteca. FS é biblioteca do node.js
 
 const nome = "Luiza" //cria a variável
-console.log (nome) //retorna o que está naquela variável 
+console.log (nome) //exibe o que está naquela variável 
 
 // -----PUXAR DO HTML-----
 
@@ -41,14 +41,16 @@ switch(permissao){
 
 // const anoDeNascimento = prompt("Em que ano você nasceu?")
 // console.log("o usuário nasceu em", anoDeNascimento)
+// console.log("o usuário nasceu em ${anoDeNascimento}")
 
 // -----FUNÇÕES-----
+// ---SAO IMPORTANTE PARA EVITAR REPETICAO NO CODIGO---
 
-function soma(param1, param2) {
-    return param1 + param2
+function nomeDaFuncao(param1, param2) { //o nome é o que será evocado/chamado depois
+    return param1 + param2 //return só é usado quando retorna algo pro codigo
 }
 
-    soma(1, 2) //forma de evocar a funçao
+    nomeDaFuncao(3, 5) //forma de evocar a funçao, dizendo que o parametro 1 é = 3 e o parametro 2 é = 5.
 
 
  
