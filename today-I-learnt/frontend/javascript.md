@@ -47,15 +47,33 @@
     - `const` não permite mudar
 - `prompt` cria uma pergunta para o usuário do navegador com uma caixinha
 
-## Funcoes
+## Estruturas de dados
+
+### Objeto
+
+- uma variável que tem vários dados (propriedades), separados por virgulas dentro da chave
+- sintaxe:
+    ```javascript
+    const pessoa = {
+        nome: "Luiza",
+        idade: 30
+    }
+    ```
+
+### Funcoes
+
+- serve para agrupar dados/informações
 
 - podem ser escritas como
+
 ```javascript
 function(x){
     y
 }
 ```
+
 - ou com arrow function
+
 ```javacsript
 (x) => {
     y
@@ -64,6 +82,15 @@ function(x){
 
 - function declaration:
     - You are probably clear on this by now, but just in case, to actually use a function after it has been defined, you've got to run — or invoke — it. This is done by including the name of the function in the code somewhere, followed by parentheses.
+
+### Array
+
+- uma forma de lista de representantes daquela constante
+- sintaxe:
+
+```javascript
+const frutas = ["banana", "abacate", "laranja"]
+```
 
 ## Operadores matemáticos
 
@@ -81,6 +108,8 @@ function(x){
     - `=` simbolo só é a atribuição que fazemos nas variaveis
 - usamos `!==` para falar de serem diferentes
 
+![alt text](image-13.png)
+
 ### Conjunções logicas
 
 - junta duas operacoes booleanas
@@ -88,6 +117,7 @@ function(x){
 - `||`é o operador para OU
 - se precisarmos imprimir um valor mas quisermos o oposto dele, é só colocar um `!`na frente
     - inverte a operação
+
     ```javascript
     console.log(!true)
     vai retornar falso
@@ -98,19 +128,15 @@ function(x){
     console.log(!numeroX>=18)
     ve se é menor de 18
     ```
+
 ## Controle de fluxo e condicionais
 
 - o fluxo de execucao normal é uma linha depois da outra
-- if/else
-- switch...case
-    - util quando a variável tem valor específico
-    ```javascript
-    switch(var){
-        case ...
-            break
-        case ...
-    }
-    ```
+
+### if/else
+
+- se...senão
+- **se** algo é verdadeiro, entáo uma coisa acontece, **senão**, outra coisa acontece
 - operador ternário
     - para quando a condicao if/else for muito simples
     ```javascript
@@ -124,6 +150,18 @@ function(x){
     const mensagem = idade >= 18 ? "tudo certo!" : "aguarde fazer 18 anos!"
     ```
 
+### switch...case
+
+- switch...case
+    - util quando a variável tem valor específico
+    ```javascript
+    switch(var){
+        case ...
+            break
+        case ...
+    }
+    ```
+
 ### Truthy or falsy
 
 - sao valores que podem ser considerados verdadeiros ou nao
@@ -131,6 +169,21 @@ function(x){
     - um espaço vazio, é por si só, falso
 - falsy: `0`, `undefined`, `null`, `""`, `NaN`
 - todos os outros sao truthy
+
+## Estruturas de repetição
+
+- loops
+- os mais comuns são `for` e `while`
+- sintaxe do `for`:
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i)}
+```
+- para cada i que começa em 0, quando ele for menor que 5, voce vai colocar o valor de mais 1 no i, após fazer o que estiver dentro do for
+
+
+
+
 
 ## Bibliotecas
 
