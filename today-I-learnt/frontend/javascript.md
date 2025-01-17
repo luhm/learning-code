@@ -181,8 +181,15 @@ for (let i = 0; i < 5; i++) {
 ```
 - para cada i que começa em 0, quando ele for menor que 5, voce vai colocar o valor de mais 1 no i, após fazer o que estiver dentro do for
 
-
-
+- sintaxe do `while`:
+```javascript
+let contador = 0
+while (contados < 3) {
+    console.log(contador)
+    contador++
+}
+```
+- enquanto o contador for menor que três, eu vou rodar o que está dentro, até finalizar
 
 
 ## Bibliotecas
