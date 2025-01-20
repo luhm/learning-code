@@ -108,6 +108,9 @@
 
 - analisar e tirar as informações importantes
 - encontrar soluções
-- 
- 
 
+## Abordagens na programação
+
+- TDD - Desenvolvimento baseado em testes
+  - antes de escrever o código, escreve os testes, o que o código precisa passar pra estar correto
+  

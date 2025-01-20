@@ -85,12 +85,50 @@ function(x){
 
 ### Array
 
-- uma forma de lista de representantes daquela constante
+- é um tipo especial de objeto em forma de lista de representantes daquela constante
+    - pode ter variáveis de vários tipos: funções, arrays, numeros
+    - para acessar um array dentro de outro, usa-se um `for-in` loop para cada array acessado
+- os elementos de um array são acessados usando numeros
+    - o primeiro elemento é sempre representado por 0
 - sintaxe:
 
 ```javascript
 const frutas = ["banana", "abacate", "laranja"]
 ```
+
+
+#### Methods
+
+- `.at(2)` depois do nome do array vai mostrar o elemento 2 (terceiro da lista, pois começa em 0)
+    - se usar apenas o nome do array seguido de [2] dá na mesma
+    - se usar numero negativo, acessa do final da lista
+- usar o método `.toString` converte um array para uma string com os elemento separados por virgula
+    - o métodop `.join(-)` é a mesma coisa mas o que vem entre parágrafos é o simbolo que vai separar os elementos do array
+- `.pop` retira o ultimo elemento do array e retorna o elemento que foi retirado
+- `.push` adiciona um novo elemento ao final
+- `.shift` faz o mesmo que pop, mas ocm o primeiro elemento
+- `.unshift` faz o mesmo que push, mas no início da lista
+- existe o método `.delete()` porém ele deixa um bucaro no array, diferente de `pop` ou `shift`
+- `.concat` une os elementos de diferentes arrays, criando um terceiro, completo
+    - exemplo: array1.concat(array2, array3 ...)
+    - é possível usar .concat para adcionar um novo elemento sem mexer no array original, apenas add novos elementos e criando um novo array
+- `.copyWithin(a, b)` copia o elemento da posição `a` para a posição `b`
+    - overwrites o valor ja existente naquela posição b, e com isso não muda o tamanho do array
+- `.splice(a, b, c)` adiciona um novo elemento em uma posição específica do array, alterando o array original
+    - a = onde o elemento deve ser inserido
+    - b = quantos elementos devem ser removidos do array
+    - c = elementos a serem adicionados
+- `.toSpliced` é igual o splice porém cria um novo array e não modifica o antigo
+- `.slice(a)` cria um novo array apenas com os elementos indicados (no caso, a partir de a)
+    - se tiver apenas um argumento, será a partir dele, tudo que vem depois
+    - a = numero do primeiro elemento retirado
+    - a, d = são retirados os elementos de a até d, d excluído
+
+#### Properties
+
+- `lenght` mostra quantidade de elementos de um array
+- `lenght -1` acessa o ultimo elemento
+- `push()` adiciona mais um elemento ao final
 
 ## Operadores matemáticos
 
@@ -137,6 +175,7 @@ const frutas = ["banana", "abacate", "laranja"]
 
 - se...senão
 - **se** algo é verdadeiro, entáo uma coisa acontece, **senão**, outra coisa acontece
+
 - operador ternário
     - para quando a condicao if/else for muito simples
     ```javascript
@@ -174,6 +213,8 @@ const frutas = ["banana", "abacate", "laranja"]
 
 - loops
 - os mais comuns são `for` e `while`
+
+### for
 - sintaxe do `for`:
 ```javascript
 for (let i = 0; i < 5; i++) {
@@ -181,10 +222,61 @@ for (let i = 0; i < 5; i++) {
 ```
 - para cada i que começa em 0, quando ele for menor que 5, voce vai colocar o valor de mais 1 no i, após fazer o que estiver dentro do for
 
+### for ... of
+
+- para loops em arrays e collections
+
+```javascript
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+for (const cat of cats) {
+  console.log(cat);
+}
+```
+- onde para um conjunto chamado cats, pegue um e atribua à constante cat, depois faça o que está entre `{}`
+
+### .map()
+
+- pega os elementos de uma coleção e faz algo com eles até passar por toda a coleção
+    - o retorno é um novo array
+- exemplo:
+```javascript
+function toUpper(string) {
+    return string.toUpperCase();
+    }
+
+    const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+    const upperCats = cats.map(toUpper);
+
+    console.log(upperCats);
+    // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
+```
+
+### .filter()
+
+- cria uma nova coleção que contém apenas itens que passam por uma certa regra
+- a diferença para o `.map()` é que ele passa por um teste booleano antes de criar a nova coleção
+
+```javascript
+function lCat(cat) {
+  return cat.startsWith("L");
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const filtered = cats.filter(lCat);
+
+console.log(filtered);
+// [ "Leopard", "Lion" ]
+```
+
+### While
+
 - sintaxe do `while`:
 ```javascript
 let contador = 0
-while (contados < 3) {
+while (contador < 3) {
     console.log(contador)
     contador++
 }

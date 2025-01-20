@@ -1,4 +1,4 @@
-#data types and structures
+# data types and structures
 
 int -> 1
 float -> 2.2 (long/double/numeric/number)
