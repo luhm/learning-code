@@ -19,6 +19,45 @@
 
 - Quando há mais de uma informação, a ultima é mais relevante. Por exemplo, se houver duas informações sobre cor, a ultima será mais relevante.
 
+## Arquitetura de Css
+
+- existem alguns modelos
+
+### BEM
+
+> criamos uma pasta css, dentro dela criamos outra pasta com o nome de block. Todos os seletores dos blocos cardCourse e progressBar, ficam dentro de um arquivo com o nome de cardCourse.css e progressBar.css, que fica salvo dentro da pasta block. E qualquer arquivo CSS que não for um bloco fica na raiz da pasta css, como o famoso arquivo reset.css. Quando temos um CSS que vai ser utilizado apenas em uma página, colocamos ele dentro da pasta page.
+![alt text](image-14.png)
+
+### DRY - don’t repeat yourself
+
+- to think in terms of style patterns
+  - ma reduce the need for classes
+- Group reusable css properties together
+  - defined by shared properties
+- Name these groups logically
+  - 
+- Add your selectors to the various css groups
+  - you add all the selectors that need to be displayed with the property/values of the group
+  ```css
+  #LIGHT-WHITE-BACKGROUND,
+  .translation,
+  .entry .wp-caption,
+  #full-article .entry img,
+  .recent-comment .comment-text,
+  .roundup h3,
+  .post-header-sharing,
+  #post-categories td.label,
+  #post-archive roundup h3,
+  .subscription-manager ol,
+  .light-white-background
+  {
+  background-color: #fff;
+  border-color: #ccc;
+  }
+  ```
+
+
+
 ## Especificidade
 
 - tem prioridade sobre a cascata
