@@ -17,25 +17,62 @@
   - sempre coloca chaves após o seletor e ao final da declaração
   - se colocar a instrução com /* no início e */ no final, ela será ignorada, ficará como comentário
 
+- quando o browser vai avaliar o css, ele lê da direita pra esquerda, então primeiro ele pega a info sobre o estilo depois ele segue para ver os seletores na ordem de `p`, depois uma `div` que tem `id#content` até `body` (no exemplo abaixo):
+  ```css
+    body div#content p {
+      color: #003366;
+    } 
+  ```
+
 - Quando há mais de uma informação, a ultima é mais relevante. Por exemplo, se houver duas informações sobre cor, a ultima será mais relevante.
 
 ## Arquitetura de Css
 
 - existem alguns modelos
 
-### BEM
+### OOCSS
 
+- decoupling by dropping descendent selectors in favor of classes
+
+### BEM - Block, Element, Modifier
+
+- separation of structure and presentation
+  - decoupling - tentar desconectar mais o html do css, não deixando eles tão fortemente presos um ao outro
+  - be able to completely rewrite our html or css without touching the other
 > criamos uma pasta css, dentro dela criamos outra pasta com o nome de block. Todos os seletores dos blocos cardCourse e progressBar, ficam dentro de um arquivo com o nome de cardCourse.css e progressBar.css, que fica salvo dentro da pasta block. E qualquer arquivo CSS que não for um bloco fica na raiz da pasta css, como o famoso arquivo reset.css. Quando temos um CSS que vai ser utilizado apenas em uma página, colocamos ele dentro da pasta page.
 ![alt text](image-14.png)
+
+- blocks e elements
+  - formam unidades funcionais
+  - devem ter keywords
+    - só são reusados se o mesmo bloco é reutilizado
+    - são as classes
+    - quando precisar de um elemento muito parecido, apenas com uma diferença pequena, usarum modificador no nome da classe
+    - guidelines:
+      - Blocks should have unique names, which become classes
+      - HTML elements should not be used in css selectors since they aren’t context-free
+      - Cascading selectors for several blocks should be avoided
+- Blocks
+  - são entidades independentes
+  - podem conter outros blocos
+  - simples ou complexos
+  - exemplos: header, footer são blocos que conteém muitos outros blocos
+- Elements
+  - partes dos blocos
+  - tem funções dentro dos blocos
+  - context dependent
+  - exemplo: um bloco para pesquisa deve ter pelo menos 2 elementos, input e botão
 
 ### DRY - don’t repeat yourself
 
 - to think in terms of style patterns
-  - ma reduce the need for classes
+  - reduce the need for classes in 
+  - não pensar em temros de objetos html individuais
 - Group reusable css properties together
   - defined by shared properties
+  - várias classes que usam aquela propriedade, ao invés de repetir as mesmas informações cada vez que colocam a classe no css
 - Name these groups logically
-  - 
+  - de acordo com o que elas representam no html
 - Add your selectors to the various css groups
   - you add all the selectors that need to be displayed with the property/values of the group
   ```css
@@ -56,7 +93,25 @@
   }
   ```
 
+### [SMACSS - Scalable and Modular Architecture for CSS](https://smacss.com/)
 
+- foi desenvolvido por um cara que trabalhou muito tempo com desenvolvimento de sites
+- Características principais de formatação:
+  - Properties are grouped by type.
+    - Box - afeta o flow de todo o resto do documento/parte do documento
+    - Border
+    - Background
+    - Text
+    - Other
+  - Opening bracket on the same line as the rule set.
+  - Colour declarations use the short form.
+- Use child selectors
+- categorias dos seletores
+  - Base - seletores gerais, como `body, form, html`
+  - Layout - são seletores que dividem a página em partes, como `div, aside`
+  - Module - são as partes modulares, reutilizáveis, como `lista de produtos, seções sidebar`
+  - State - diz como os layouts e modules vão se comportar, por exemplo, em telas maiores e menores, como `hover, inactive`
+  - Theme - mais detalhes ao state, nem sempre é necessário
 
 ## Especificidade
 
