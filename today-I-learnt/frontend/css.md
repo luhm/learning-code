@@ -26,6 +26,15 @@
 
 - Quando há mais de uma informação, a ultima é mais relevante. Por exemplo, se houver duas informações sobre cor, a ultima será mais relevante.
 
+## como organizar os arquivos
+
+- não é necessário ter apenas um `.css` para o html, podemos ter mais de um
+- para essa organização, algumas ideias são:
+  - criar um arquivo reset com o * que tem no inicio de todos os arquivos css
+  - criar um com modelos replicáveis, por exemplo com a base do estilo de um card de venda que se repete em várias partes do sites
+  - criar um base com o basico, tipo espaçamento geral de todas as páginas (nas laterais, por exemplo)
+
+
 ## Arquitetura de Css
 
 - existem alguns modelos
@@ -106,10 +115,10 @@
   - Opening bracket on the same line as the rule set.
   - Colour declarations use the short form.
 - Use child selectors
-- categorias dos seletores
-  - Base - seletores gerais, como `body, form, html`
-  - Layout - são seletores que dividem a página em partes, como `div, aside`
-  - Module - são as partes modulares, reutilizáveis, como `lista de produtos, seções sidebar`
+- categorias dos seletores:
+  - Base - seletores gerais das páginas, como `body, form, html` - criar um css com isso
+  - Layout - são seletores que dividem o site em diferentes páginas, como a de produtos, a de promoção etc
+  - Module - são as partes modulares, reutilizáveis, que se repetem várias vezes, como `lista de produtos, seções sidebar`
   - State - diz como os layouts e modules vão se comportar, por exemplo, em telas maiores e menores, como `hover, inactive`
   - Theme - mais detalhes ao state, nem sempre é necessário
 
@@ -190,6 +199,8 @@ p {
     - elementos inline não aceitam a formatação margin: auto, por isso podemos:
       1. mudar o display para block, ao inves de inline
       2. colocar uma configuração no “pai” dele de text-align: center, aí todo o texto naquela caixa pai estará seguindo essa regra
+>-  Como atribuímos 50px para padding-left e padding-right, estes valores são somados a largura que foi estabelecida, desta forma temos: 400px (largura definida) + 50px (padding left) + 50px (padding right) = 500px de largura. No caso da altura, o valor determinado de padding-top e padding-bottom de 30px é somado a largura de 400px que foi definida e, com isso, chegamos ao valor de 460px.
+  - para resolver isso é só usar `box-sizing: border-box` pois ela altera o cálculo
 
 - os id e classes não podem começar com números
   - nem com caracteres especiais (apenas _)
@@ -223,13 +234,32 @@ p {
   - usar `transition` no elemento normal para que ele faça transições suaves nessas animações
 
 ### Tamanhos
-- px é uma unidade fixa, ela não altera conforme o navegador altera etc
-- se colocar o tamanho do texto em porcentagem, ele vai se basear o percentual no tamanho classico que o navegador usa (costuma ser 16px)
-- se usar a unidade `rem`, ela é o valor em pixel/10
-  - então se eu estiver usando 40px, seria 4.0rem; 92px seria 9.2rem
-  - rem é uma unidade flexivel, que se adapta às questões de acessibilidade do usuário
-- as unidades `vw` (pra widht) e `vh` (para height) pegam o tamanho inteiro da janela, mas isso pode fazer extrapolar o tamanho do container
-  - usando `rem` ele respeita o tamanho do container pai
+
+- **medidas absolutas**: 
+> 1 in = 2,54cm = 25,4mm = 72pt = 6pc
+
+  - **px** é uma unidade fixa, ela não altera conforme o navegador altera etc
+  - **centímetro**
+  - **point** - pt: mais comum em tipografias e impressões
+  - **inches** - in: polegadas
+  - **paica** - pc: tipografia
+
+- **medidas relativas**:
+  - são calculadas tendo como base uma outra unidade de medida definida
+  - se colocar o tamanho do texto em porcentagem, ele vai se basear o percentual no tamanho classico que o navegador usa (costuma ser 16px)
+  - **em**: muda para os elementos filhos de acordo com o tamanho da fonte (font-size) do elemento pai
+    - se um elemento pai é 16px, no filho 1em será igual a 16px, seguindo a lógica, 2em será igual a 32px 
+    - interessante para componentização dos elementos
+    > A ideia é que a alteração do tamanho da fonte do elemento pai faça com que todo o componente se modifique e redimensione baseando-se nesse novo valor
+  - **rem** - root em: se relaciona com a fonte do elemento raiz
+    - o elemento raiz costuma ser html, que por padrão é 16px
+      - o ideal é colocar na raiz o valor de `font-size: 62,5%`
+      - se usar a unidade `rem`, ela é o valor em pixel/10
+      - então se eu estiver usando 40px, seria 4.0rem; 92px seria 9.2rem
+  - **%** - percentual: se definirmos um elemento tendo um tamanho de 50%, independente do dispositivo em questão, esse módulo sempre ocupará metade do espaço que lhe cabe
+  - as unidades `vw` (pra widht) e `vh` (para height) pegam o tamanho inteiro da janela, mas isso pode fazer extrapolar o tamanho do container
+    - 1vw representa 1% do tamanho da largura dessa área visível
+  
 
 ### Posições
 
