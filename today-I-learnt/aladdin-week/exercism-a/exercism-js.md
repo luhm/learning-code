@@ -46,4 +46,7 @@ Instruções de cada task e resoluções no [basic.js](./basic.js). Há também 
     - Parentheses, Exponents, Division/Multiplication, Addition/Subtraction
     - operações resumidas:
         - `+=` onde `x += y` é o mesmo que `x = x + y`
-    - 
+
+### Resolução
+
+- a resolução está no arquivo [numbers.js](./numbers.js)

@@ -176,6 +176,13 @@ const frutas = ["banana", "abacate", "laranja"]
 - se...senão
 - **se** algo é verdadeiro, entáo uma coisa acontece, **senão**, outra coisa acontece
 
+```if (a > 0) {
+    result = 'positive';
+  } else {
+    result = 'NOT positive';
+  }
+```
+
 - operador ternário
     - para quando a condicao if/else for muito simples
     ```javascript
