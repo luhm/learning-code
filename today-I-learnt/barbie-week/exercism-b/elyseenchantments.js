@@ -1,4 +1,4 @@
-//TASK 1 - recieve a card from stack
+//TASK 1 - receive a card from stack
 
 //To pick a card, return the card at index position from the given stack.
 
@@ -79,3 +79,8 @@ function checkSizeOfStack(cards, stackSize) {
     return false;
   }
 }
+
+function checkSizeOfStack(cards, stackSize) {
+  return cards.length == stackSize 
+}
+

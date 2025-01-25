@@ -166,6 +166,14 @@ const frutas = ["banana", "abacate", "laranja"]
     console.log(!numeroX>=18)
     ve se é menor de 18
     ```
+### Comparações
+
+- sempre retorna true ou false
+- números:
+    - ![alt text](image-15.png)
+- strings:
+    - ordem do dicionário/lexicográfica
+    - [ver ordem](https://www.fileformat.info/info/charset/UTF-16/list.htm)
 
 ## Controle de fluxo e condicionais
 
@@ -173,6 +181,7 @@ const frutas = ["banana", "abacate", "laranja"]
 
 ### if/else
 
+- condicional
 - se...senão
 - **se** algo é verdadeiro, entáo uma coisa acontece, **senão**, outra coisa acontece
 
