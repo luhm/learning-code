@@ -92,6 +92,7 @@
 - `<em>` é uma tag que significa emphasys e substitui `<i>`, de itálico
 - `<u>` é sublinhado, mas não é indicado
   - é mais indicado usar o css, colocando o texto alvo do estilo dentro da tag `<span>` 
+  - O `<span>` é um elemento inline que não cria quebras de linha, permitindo que o ícone e o texto fiquem na mesma linha, como desejamos na nossa barra de navegação.
 - `s` riscado
 - `mark` destaca um texto, tipo um marcatexto
 - `pre` é uma tag que adiciona um texto pre-formatado como código
@@ -107,7 +108,8 @@
 - `header` - cabeçalho da página
   - dentro dele colocamos a tag `nav` que indica uma barra de navegação
 - `main` - conteúdo principal
-  - `section` - faz seções
+  - `section` - faz seções dentro da div que tem conteúdo relacionado com o "original"/"principal"
+    - é como se a div fosse uma casa e a section fosse um cômodo
   - `article` - é tipo o artigo de um blog
     - pode colocar dentro dela as divisões de `header`, `main` e `footer`
 - `aside` - uma parte do conteúdo principal que fica ao lado do main

@@ -72,6 +72,8 @@
   - context dependent
   - exemplo: um bloco para pesquisa deve ter pelo menos 2 elementos, input e botão
 
+**- existe uma forma específica de nomear as classes!!**
+
 ### DRY - don’t repeat yourself
 
 - to think in terms of style patterns
@@ -204,6 +206,7 @@ p {
 
 - os id e classes não podem começar com números
   - nem com caracteres especiais (apenas _)
+  - classes podem ter mais de uma no mesmo elemento, são separadas por espaço normal
  
 - link interessante: [CSS Tricks](https://css-tricks.com/)
 
@@ -223,6 +226,15 @@ p {
 - **transform**: deixa tudo `uppercase`, `lowercase`, `capitalize` (first letter)
 - **ident**: coloca recuo de primeira linha
 - `cursor: pointer` faz o mouse virar aquela mãozinha sinalizando que pode clicar
+- `text-overflow:` é uma propriedade que vai controlar quando um texto é muito maior do que um input, e ela vai dizer como é para o input se comportar quando isso acontecer
+  - `ellipsis` é pra que só apareça o inicio e fique depois com as reticencias simbolizando que tem algo mais depois
+  - **sempre** precisa colocar a propriedade `overflow:` depois da `text-overflow:` para que ela funcione. é possível colocar só hidden, que é o que vai fazer o texto sumir
+- `white-space:` é a propriedade correta ao inves de `text-wrap:`
+
+### Imagem
+
+- é ideal colocar imagem no css quando ela não tem conteudo atrelado a ela (ela é só de estilização, pra fica bonitinho e tals)
+  - por exemplo uma barra de search e tem uma lupa só pra simbolizar
 
 ### Visibilidade
 
