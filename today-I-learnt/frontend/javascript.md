@@ -96,7 +96,6 @@ function(x){
 const frutas = ["banana", "abacate", "laranja"]
 ```
 
-
 #### Methods
 
 - `.at(2)` depois do nome do array vai mostrar o elemento 2 (terceiro da lista, pois começa em 0)
@@ -123,6 +122,8 @@ const frutas = ["banana", "abacate", "laranja"]
     - se tiver apenas um argumento, será a partir dele, tudo que vem depois
     - a = numero do primeiro elemento retirado
     - a, d = são retirados os elementos de a até d, d excluído
+
+![alt text](image-16.png)
 
 #### Properties
 
@@ -354,6 +355,10 @@ while (contador < 3) {
     - transferencias de dados entre aplicacoes
         - APIs
         ![alt text](image-3.png)
+- o código `npm i json-server -g` instala um servidor json para rodar esses arquivos no projeto. O `-g` no final significa que ele é global
+    - no windows ele dá erro
+    - o npm a gente usa quando tem o node instalado no OS
+    - com esse json-server a gente consegue criar apis e consumir elas atraves do JavaScript
 
 ## APIs
 
@@ -414,8 +419,9 @@ while (contador < 3) {
 - `document.getElementsByTagName("tagDoElementoHtml")` - pega todos os elementos com aquela tag
 - `document.getElementsBayClassName("classeDoElemento")` - pega todos os elementos pela classe
 - tem também by name e by id (name é tipico de inputs/formularios)
-- se usar `.querySelector` podemos usar os seletores css como # pra Id e . pra class - **só pega um elemento, o primeiro**
-    - para pegar mais de um, usar `.querySelectorAll`
+- se usar `.querySelector(#id ou .class)` podemos usar os seletores css como # pra Id e . pra class - **só pega um elemento, o primeiro**
+    - o querySelector pega apenas o primeiro elemento que tem aquela classe/id - para pegar mais de um, usar `.querySelectorAll`
+    - é mais usado para pegar pela classe do elemento, para ID pode usar o `getElementByID(id)`
 - pode usar o html com `textContent` ou com `innerHTML`, da para pegar e também para alterar o conteudo daquela tag (textos de um paragrafo ou de um titulo, por exemplo)
 - se eu quiser pegar algo dentro de um input (tipo uma caixa de email de formulario), eu posso colocar `.value`
 - as vezes nao se usa o `document.` pois se usa dentro de qual elemento voce quer fazer aquela alteracao
@@ -424,9 +430,16 @@ while (contador < 3) {
     ![alt text](image-8.png)
 
 - é possivel adicionar eventos
+    - evento é tudo o que o usuário interaje na tela e o JS pega e manipula
     - a forma mais facil é adicionando um `addEventListener()` após um `element.`onde element pode ser, por exemplo, um botao do HTML
         - dentro dele, colocar primeiro o tipo de evento e depois qual a funcao que ele vai retornar (tipo um callback), por exemplo um alert (uma caixinha que abre na tela com uma msg)
         - o tipo de evento `click`, é porque foi clicado; `input` é porque foi digitado
+    - sintaxe:
+    ```javascript
+    document.addEventListener ('input', function() {
+        //o que vai ser feito
+    })
+    ```
 
 ## Paradigmas da programacao
 
@@ -445,13 +458,13 @@ while (contador < 3) {
     - possui dois parametros - `erro` e `conteudoDoArquivo`
 2. Promises
     - promessas - pode ser cumprido ou nao
-    - um objeto no js que guarada essa promessa acima
+    - um objeto no js que guarda essa promessa acima
     - possui 3 estados
         - pending - iniciada, mas pendente
         - fullfilled - concretizada, sucesso
         - rejected - rejeitada, erro
     - uso:
-        - pegar dados do backend (funcao fetch, por exemplo)
+        - pegar dados do backend (funcao fetch, por exemplo, que é muito usada em APIs)
     - para criar uma nova, usar `new Promise`
     ```javascript
     const myPromise1 = new Promise(executor) //promise é com letra maiuscula porque é uma classe
@@ -468,6 +481,11 @@ while (contador < 3) {
             console.log("Aqui está sua resposta", nomeDoParametroQueEuQuiser)
         })
         ```
+        - exemplo de fetch API numa busca por artistas na pagina do spotify:
+        ![alt text](image-17.png)
+        - e a função que vai dizer o que fazer e como aparecer na DOM o resultado:
+        ![alt text](image-18.png)
+
         - para pegar o erro, usar `.catch`
         - ao final, independente de dar certo ou nao, ele pode executar uma resposta usando `.finally`
 
