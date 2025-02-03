@@ -488,7 +488,7 @@ while (contador < 3) {
 
         - para pegar o erro, usar `.catch`
         - ao final, independente de dar certo ou nao, ele pode executar uma resposta usando `.finally`
-
+ 
 3. resolvendo promises usando async/await
     - essa coisa X é assincrona (estou avisando para o JS) e eu quero que voce espere para executar o que vem em seguida
     - quando executamos uma funcao que possui coisas antes e depois dela, mas queremos esperar ela finalizar para entao continuar, colocamos `await` antes dela

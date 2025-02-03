@@ -21,19 +21,42 @@
     - usa o webpack.js
     - pega vários codigos JS e transforma em um só
 - importacao de infos de outros arquivos
-    - o Reacte usa ESmodules, e nao o CommonJS
+    - o React usa ESmodules, e nao o CommonJS
     - sintaxe ESmodules: `import { informacao } from "./arquivo.js";`
 - um arquivo componente do React tem extensao `.jsx` e o nome comecao com letra maiuscula
+    - na estrutura do react, `.jsx`, mistura html e javaScript no mesmo arquivo
+    - uma função JS tem dentro dela um return com um codigo html(por exemplo uma div) dentro
 
-## Comecando um projeto
+
+## Comecando um projeto 
 
 - usar o terminal direto e nao do vscode
 - seguir as orientacoes que estao na [documentacao](https://react.dev/learn/start-a-new-react-project)
-- no React, tudo gera em torno de app.js, e esse app é renderizado dentro do root do html
+    - essa documentação traz o react com algum framework (next.js, gatsby) que já dá uma boa estrutura para trabalhar com react
+    - para começar do 0:
+        1. abrir o terminal do pc, não do vscode
+        2. já com node instalado na máquina, digitar `npx create-react-app nome-do-projeto` onde npx é o executor do npm
+- no React, tudo gera em torno de app.js, e esse app é renderizado dentro do `root` do html
     - ele vai tendo vários arquivos que tem um fluxo de renderizacao que utiliza infos de varios arquivos que ficam na pasta src do proprio react
 - trabalho com singlepage application - padrao de renderizacao
     - se quiser mais de uma pagina, ele usa o JS
     - outros tipos: SSR (server side rendering) e SSG (server side generation)
+- virtual DOM - o proprio react já cria esse virtual dom que facilita no carregamento dos dados
+
+## Construindo o projeto
+
+![alt text](image-10.png)
+- acima está a estrutura básica de um doc react
+- sempre que quiser pegar algo do JS e usar no HTML (para que o conteudo dele, por exemplo de um atributo de um objeto, apareca no html) é só colocar ele entre `{}`
+![alt text](image-9.png)
+- quando usar uma classe na parte de html do .jsx, usar `className`, `id` nao muda
+- quando usar uma imagem no html (tipo o logo), fazer um import dela no react
+    - fica mais ou menos assim:
+    ![alt text](image-19.png)
+    - depois adiciona no`src`da tag `img` (ou de outra, como a `a`) do html com `{}`:
+    ![alt text](image-21.png)
+- da para estilizar dentro direto do html do react
+- ao final é sempre importante exportar a constante que voce estava mexendo
 
 ## Tipos de componentes
 
@@ -45,16 +68,6 @@
         - para colocar mais de um componente no `render`, é necessário usar uma tag e dentro dela colocar os componentes, pois o render só aceita um componente "primario"
             - para isso existe a tag `< >` sem conteudo, chamada `fragment`
 - baseado em funcoes - inicia com `function`
-
-## Construindo o projeto
-
-![alt text](image-10.png)
-- acima está a estrutura básica de um doc react
-- sempre que quiser pegar algo do JS e usar no HTML (para que o conteudo dele, por exemplo de um atributo de um objeto, apareca no html) é só colocar ele entre `{}`
-![alt text](image-9.png)
-- quando usar uma classe na parte de html do .jsx, usar `className`, `id`nao muda
-- quando usar uma imagem no html (tipo o logo), fazer um import dela no react e depois adiciona no`src`da tag `a` do html com `{}`, tirando as aspas
-- da para estilizar dentro direto do html do react
 
 ## Props
 
