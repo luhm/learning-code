@@ -12,5 +12,5 @@
   - funciona como um backend também
   - 
 
-> conteudo baseado em: https://www.youtube.com/watch?v=6SC3C03nino
+> conteudo baseado em: https://www.youtube.com/watch?v=6SC3C03nino e https://www.youtube.com/watch?v=0lYCqvkGR_U
 
