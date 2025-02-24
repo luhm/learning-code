@@ -15,7 +15,7 @@ Esse repo possui 3 pastas:
 - **Exercises adatech**: uma pasta com exercícios que fiz durante o curso do Santander + AdaTech
 - **Today I Learnt**: pasta com arquivos de estudos organizados por temas.
     - as pastas `best practices`, `frontend`, `git`, `logic` são pastas temáticas
-    - as pastas com final `-week` são pastas relacionadas à formq que organizei meus estudos (ver abaixo)
+    - as pastas com final `-week` são pastas nomeadas a partir de personagens de filmes/desenhos/quadrinhos etc e que simbolizam meu cronograma da semana, com links dos materiais que utilizo para estudar naquela semana (ver detalhes abaixo)
 
 ### {name}-week
 
