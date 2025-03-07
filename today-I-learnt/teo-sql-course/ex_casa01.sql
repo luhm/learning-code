@@ -7,9 +7,15 @@ SELECT product_category_name
 FROM tb_products
 WHERE product_category_name = 'artes'
 
+-- OU --
+
+SELECT count(*) --* conta todos, mas se voce colocar a palavra distinct dentro do () e uma outra coluna, por ex o id, e tiver mais de uma linha com o mesmo id, ele vai perceber isso e eliminar uma delas
+FROM tb_products
+WHERE product_category_name = 'artes'
+
 -- Quantos produtos tem mais de 5 litros? 19407
 
-SELECT product_id
+SELECT count (*)
 FROM tb_products
 WHERE product_length_cm * product_height_cm * product_width_cm / 1000 > 5
 
@@ -17,7 +23,7 @@ WHERE product_length_cm * product_height_cm * product_width_cm / 1000 > 5
 
 SELECT product_id,
     product_category_name,
-    product_length_cm * product_height_cm * product_width_cm / 1000000 as product_volume_m3
+    product_length_cm * product_height_cm * product_width_cm / 1000 as product_volume_m3
 FROM tb_products
 
 -- Quantos produtos de 'beleza_saude' com menos de 1 litro? 132

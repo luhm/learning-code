@@ -1,4 +1,4 @@
-# Aula 1
+# Aula 1 e 2
 
 - no VS Code, colocamos um arquivo `.sql` para poder rodar as queries.
     - adicionamos a extensão SQLite
@@ -6,11 +6,10 @@
     - no mac, trocal control por `command`
 - selecionamos a query e, com o botão direito, clicamos `run query` e ela vai abrir ao lado
 
-## Banco de dados
+## Select, from, where
 
 - **campo** é a coluna
 - **chave** é o que tem em comum entre duas tabelas para relaciona-las/ligá-las
-- 
 - **JOIN** é juntar, unir e usa uma chave para isso
 - abaixo tem o código para abrir uma tabela, a partir de uma consulta
     - **SELECT** que é selecionar
@@ -50,3 +49,9 @@ and product_qtt > 1
 select t1.product
 from tabl as t1
 ```
+
+## Group by
+
+- 
+
+
