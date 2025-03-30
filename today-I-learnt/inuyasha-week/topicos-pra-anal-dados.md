@@ -33,3 +33,7 @@ c. mapa de calor
     - micro
     - detalhamento
 
+## Refs
+
+[Esses são os 5 PASSOS para fazer uma ANÁLISE DE DADOS](https://youtu.be/-zHK3e45cI8?si=TcRdGkxqApMt-i3q)
+
