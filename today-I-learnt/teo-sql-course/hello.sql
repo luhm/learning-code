@@ -114,4 +114,22 @@ from tb_products
 
 order by product_category_name
 
+-- left join
+
+select *
+from tb_order_items as t1
+left join tb_products as t2
+on t1.product_id = t2.product_id
+
+-- left join só com algumas colunas
+
+select t1.*,
+       t2.product_category_name
+
+from tb_order_items as t1
+
+left join tb_products as t2
+
+on t1.product_id = t2.product_id
+
 
