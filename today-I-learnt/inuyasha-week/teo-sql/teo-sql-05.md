@@ -6,7 +6,7 @@
 - quando o que voce quer como resultado é já uma query completa (ou o resultado dela, que é já uma tabela)
 - é possível fazer um join com uma outra query, pois o resultado dela é já uma tabela
 
-## WITH
+## WITH (CTE - Common Table Expression)
 
 - ele vem primeiro na query, antes do select
 - em seguida vem o nome de uma tabela que voce quer fazer

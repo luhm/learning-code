@@ -2,7 +2,7 @@
 
 ## Material
 
-O Theo organizou o curso em vídeos e em um [repositório do github](https://github.com/TeoCalvo/teoSQL-V2/tree/main).
+O Teo organizou o curso em vídeos e em um [repositório do github](https://github.com/TeoCalvo/teoSQL-V2/tree/main).
 
 Nesse repo a gente acha:
 - explicações extras
@@ -30,7 +30,7 @@ Aula 7 - [Como fazer CREATE TABLE no SQL](https://www.youtube.com/watch?v=K2V0ZJ
 
 ## Como eu me organizei
 
-- As informações necessárias para todas as aulas estão na pasta [theo-sql-course](https://github.com/luhm/learning-code/blob/main/today-I-learnt/theo-sql-course).
+- As informações necessárias para todas as aulas estão na pasta [theo-sql-course](https://github.com/luhm/learning-code/blob/main/today-I-learnt/teo-sql-course).
 - As **anotações** sobre cada aula e conteúdo estão listadas abaixo, de acordo com a semana que eu fiz a aula.
 
 - aula 1 - [Harold-week](https://github.com/luhm/learning-code/blob/main/today-I-learnt/harold-week/theo-sql)
