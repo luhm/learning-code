@@ -7,6 +7,7 @@
     - dimensão de tempo =  dia, mês
     - dimensão de produto = categoria, cor, peso
     - dimensão de localização = cidade, estado
+
 2) Tipo de análise
 - descritiva
 - diagnóstica
@@ -21,7 +22,8 @@ c. vendas por mes (intensidade, onde vende mais)
 4) Definir ferramentas\
 a. linhas\
 b. barras\
-c. mapa de calor
+c. mapa de calor\
+![alt text](image.png)
 
 5) Painel final
 - fazer um rascunho
