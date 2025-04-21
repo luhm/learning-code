@@ -40,5 +40,5 @@
         - aprende o que é bom ou ruim, certo ou errado
         - usa politicas que definem a ação, recebendo ao bom ou ruim
             - atualiza a política ao saber que aquilo é bom ou ruim
-            
+
 

@@ -3,7 +3,9 @@
 1. O que são dados? Quais são suas fontes? O que define análise de dados?
 
 **Dados** são informações - que podem ser numericas, textuais, de vários tipos - que são gerados a partir das ações e interações de pessoas ãs quais o produto se destina (que podem ser clientes, funcionários, usuários etc) com os produtos em si (que podem ser produtos físicos, serviços internos de uma empresa, externos, etc).
+
 As **fontes dos dados** são de onde vem os dados, onde eles são produzidos, e podem ser diversas: documentos, formulários, ações em sites (cliques, páginas visitadas), informações sobre pessoas (funcionários, clientes). Basicamente tudo é dados e as fontes podem ser muitas.
+
 **Análise de dados** é avaliar os dados para conseguir informações relevantes para o negócio e a empresa, usando tecnicas e ferramentas específicas, normalmente com uso de gráficos e estatística. Existem alguns tipos de análise de dados:
 - preditiva
 - prescritiva
@@ -13,6 +15,7 @@ As **fontes dos dados** são de onde vem os dados, onde eles são produzidos, e 
 2. O que é business intelligence?
 
 É um modelo de tomada de decisões de forma cuidadosa, usando dados e informações importantes do negócio, usando tecnologias e ferramentas específicas para isso. A análise de dados faz parte do BI, ajudando a entender a realidade do negocio e definir objetivos a partir da realidade.
+
 Tópicos em que ele pode ajudar:
 - Identificando formas de aumentar os lucros
 - Analisando o comportamento dos clientes
@@ -40,28 +43,30 @@ Ferramentas:
 
 3. Quais são os diferentes escopos na área de Dados?
 
-Engenheiro de dados - trabalha com extração, ingestão e na ponta de infraestrutura para esses dados
-Cientista de dados - trabalha mais com análise dos dados voltado para predizer, olha mais pro futuro, utiliza ferramentas de AI, por exemplo.
-Analista de dados - trabalha com entender, interpretar e tirar insights dos dados para responder perguntas de negócio e entender porque o negocio está como está, e apontar ideias e caminhos.
-Engenheiro de ML - constroi ferramentas para serem usadas principalmente pelo cientista de dados
-Analista de BI - está mais perto do negócio e olha de forma mais ampla para as perguntas e os objetivos do negócio, analisa os insights e constroi como colocar eles em prática.
-Arquiteto de dados - constroi a estrutura dos dados do inciio ao fim
+- Engenheiro de dados - trabalha com extração, ingestão e na ponta de infraestrutura para esses dados
+- Cientista de dados - trabalha mais com análise dos dados voltado para predizer, olha mais pro futuro, utiliza ferramentas de AI, por exemplo.
+- Analista de dados - trabalha com entender, interpretar e tirar insights dos dados para responder perguntas de negócio e entender porque o negocio está como está, e apontar ideias e caminhos.
+- Engenheiro de ML - constroi ferramentas para serem usadas principalmente pelo cientista de dados
+- Analista de BI - está mais perto do negócio e olha de forma mais ampla para as perguntas e os objetivos do negócio, analisa os insights e constroi como colocar eles em prática.
+- Arquiteto de dados - constroi a estrutura dos dados do inciio ao fim
 
 4. O que é o negócio e como se relaciona com a área de Dados? Quais são os principais modelos de negócio?
 
-Negócio é uma atividade comercial, financeira e que oferece produtos e/ou serviços. Dentro de uma empresa grande, é possível ter diferentes modelos de negocio dependendo do serviço ofertado e o publico.
-B2C -  business to consumer - Negócios que vendem para o consumidor final, como mercados
-D2C - direct to consumer - quando a propria fábrica, quem produz os produtos ou serviços, vende para o cliente, como em lojas de fábrica ou outlets
-B2B - business to businnes - quando o serviço ou produto é vendido para outras empresas
-P2P - peer to peer - empresas que servem de espaço para conexão de pessoas, e normalmente ganham dinheiro a partir de anuncios
-Franquia - a pessoa compra a marca e o que ela entrega, por exemplo BK ou Giraffas
-Assinatura - A pessoa consegue o serviço a partir de uma assinatura, como na netflix
-Freemium - a pessoa tem acesso ao serviço de graça, porém se ela pagar ela tem benefícios, como spotify e slack
-Isca e Anzol - o carro chefe é caro e tem valores agregados, porém para que ele seja cada vez melhor e mais aproveitável, vende-se vários suportes e adereços
-Negocios sociais - são negócios que visam ajudar/resolver/afetar problemas sociais como analfabetismo ou poluição
-SaaS - Software as a service - são softwares que promovem serviços digitais que vão além da compra de um software, mas com desenvolvimento contínuo, manutenção 
-Marketplace - são espaços de venda online, lojas virtuais, como amazon e mercado livre
-Plataforma Multilateral - são negocios que oferecem serviços para diferentes partes, conectando elas e gerando valor para ambas, como Ifood e Uber
+Negócio é uma atividade comercial, financeira e que oferece produtos e/ou serviços. Dentro de uma empresa grande, é possível ter diferentes modelos de negocio dependendo do serviço ofertado e o publico. Os dados são elementos importantes para a tomada de decisão sobre o negócio e sobre como dar seguimento a ele, fazer mudancas, etc.
+
+Principais modelos de negócios:
+- B2C -  business to consumer - Negócios que vendem para o consumidor final, como mercados
+- D2C - direct to consumer - quando a propria fábrica, quem produz os produtos ou serviços, vende para o cliente, como em lojas de fábrica ou outlets
+- B2B - business to businnes - quando o serviço ou produto é vendido para outras empresas
+- P2P - peer to peer - empresas que servem de espaço para conexão de pessoas, e normalmente ganham dinheiro a partir de anuncios
+- Franquia - a pessoa compra a marca e o que ela entrega, por exemplo BK ou Giraffas
+- Assinatura - A pessoa consegue o serviço a partir de uma assinatura, como na netflix
+- Freemium - a pessoa tem acesso ao serviço de graça, porém se ela pagar ela tem benefícios, como spotify e slack
+- Isca e Anzol - o carro chefe é caro e tem valores agregados, porém para que ele seja cada vez melhor e mais aproveitável, vende-se vários suportes e adereços
+- Negocios sociais - são negócios que visam ajudar/resolver/afetar problemas sociais como analfabetismo ou poluição
+- SaaS - Software as a service - são softwares que promovem serviços digitais que vão além da compra de um software, mas com desenvolvimento contínuo, manutenção 
+- Marketplace - são espaços de venda online, lojas virtuais, como amazon e mercado livre
+- Plataforma Multilateral - são negocios que oferecem serviços para diferentes partes, conectando elas e gerando valor para ambas, como Ifood e Uber
 
 5. O que é LGPD?
 
