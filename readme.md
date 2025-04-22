@@ -64,3 +64,20 @@ Esse repo possui 3 pastas:
         - [Machine Learning e dados](https://www.programaria.org/carreira-em-machine-learning-como-se-preparar-para-trabalhar-na-area/)
         - [O que é programar](https://www.programaria.org/o-que-e-programar/)
         - [Papeis e skills em dados](https://www.programaria.org/quais-os-papeis-e-skills-esperadas-na-area-de-dados/)
+- **Harold-week**
+    - [SQL - Téo Calvo - ep 01](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep01)
+    - [Aprender SQL do Zero | Data Starter | Comunidade DS](https://www.youtube.com/watch?v=sQ8-wKgtu24)
+- **Inuyasha-week**
+    - [SQL - Téo Calvo - ep 02](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep02)
+    - [SQL - Téo Calvo - ep 03](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep03)
+    - [SQL - Téo Calvo - ep 04](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep04)
+    - [SQL - Téo Calvo - ep 05](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep05)
+    - [Esses são os 5 PASSOS para fazer uma ANÁLISE DE DADOS](https://youtu.be/-zHK3e45cI8?si=TcRdGkxqApMt-i3q)
+- **Jotalhão-week**
+    - [SQL - Téo Calvo - ep 06](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep06)
+    - [Programa Desenvolve - Grupo Boticário - Inteligência Artifical, aulas 1 a 5](https://desenvolve.grupoboticario.com.br/)
+- **Kuririn-week**
+    - [SQL - Téo Calvo - ep 07](https://github.com/TeoCalvo/teoSQL-V2/tree/main/ep07)
+    - [Programa Desenvolve - Grupo Boticário - Inteligência Artifical, aulas 6 a 11](https://desenvolve.grupoboticario.com.br/)
+
+

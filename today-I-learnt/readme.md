@@ -13,7 +13,7 @@ Abaixo eu listo meus estudos divididos por conteúdos.
 
 ## The Odin Project
 
-[Problem SOlving](https://github.com/luhm/learning-code/tree/main/today-I-learnt/aladdin-week/odinproject-a)
+[Problem Solving](https://github.com/luhm/learning-code/tree/main/today-I-learnt/aladdin-week/odinproject-a)
 
 
 ## Livro de lógica do JS
