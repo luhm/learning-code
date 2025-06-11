@@ -147,4 +147,90 @@
 
 ### Conjuntos (sets)
 
+- coleção não ordenada e sem elementos repetidos
+![alt text](image-10.png)
+- usando a função `add` para adicionar um valor repetido, ele mesmo assim retorna a coleção sem valor repetido
+    - pode usar ela para incluir um valor diferente dos já existentes
+- pode usar a função `update` para adicionar um conjunto em outro
+- gera um erro caso tente retirar um elemento que não existe com `remove`
+    - para não dar erro, pode usar a função `discard`
+    ![alt text](image-11.png)
+    - a função `pop` remove um valor aleatório do conjunto
+- unir conjuntos com função `union` ou usando o simbolo `|`
+- intersecção de conjuntos é usando a função `intersection` ou o simbolo `&`
+- os elementos diferentes de cada conjunto podemos usar `difference` ou `-`
+- `symetric_difference` e o simbolo `ˆ` trazem os numeros que estão presentes no primeiro conjunto mas não no segundo
+- a função `issubset` (ou `<=`) informa se o conjunto da esquerda é um subconjunto do da direita
+    - a função `issuperset` (ou `>=`) informa se o conjunto da direita é um subconjunto do da esquerda
+    - elas retornam valores booleanos
+
+## Funções
+
+- reutilização de blocos de codigo
+- como chamar:
+    ```python
+    def nome_da_função(parâmetro)
+        return f"uma frase {parâmetro}"
+    print(nome_da_função(X))
+    ```
+- parâmetros:
+    - o parâmetro pode ser uma variável
+    - podem ter multiplos parâmetros
+- algumas funções já são internas, ou `built-in`:
+    - print()
+    - len()
+    - type()
+    - max(), min(), sum()
+
+## Estruturas de controle
+
+### condicionais
+
+- if, elif, else
+    - é no mesmo sentido de if - then if - else do JS
+    ![alt text](image-12.png)
+
+### laços de repetição
+
+- agem sobre sequencias
+- `for ... in` - também chamado `loop`
+    - imprime cada elemento da sequencia/variável
+- `while`
+    - repete a condição até que ela não seja mais verdadeira
+    ![alt text](image-13.png)
+- `break`, `continue`, `pass`
+    - ajudam no controle dos laços de repetição
+    - podem ser usados em funções também
+    - `break` faz parar ao chegar em uma determinada condição
+    - `continue` e `pass` fazem continuar mesmo que ache um valor que resolve a condição
+- `try` ... `except` ... `else` ... `finally`
+    - voce pede pra ele tentar executar algo e já preve erros usando o `except`
+    - o else é para quando satisfaz a condição
+    - o finally é pra realmente finalizar tudo
+
+## Manipulação de arquivos
+
+- escrever arquivos
+    - para adicionar nova linha, usar no inicio ou no final `\n`
+    - usando a sintaxe abaixo, nós criamos o arquivo novo e escrevemos nele
+    ```python
+    with open("novo arquivo.txt", "w") as arquivo
+        arquivo.write("olá")
+        arquivo.write("Tudo bem?")
+    ```
+    - `w` é para sinalizar que vamos escrever, write
+- ler um arquivo
+    - colocamos `r` no lugar do `w`
+    ```python
+    with open("novo arquivo.txt", "r") as arquivo
+        conteudo = arquivo.read()
+        print(conteudo)
+    ```
+    - para ler linha por linha, colocamos um `for ... in`
+    ```python
+    with open("novo arquivo.txt", "r") as arquivo
+        for linha in arquivo:
+            print(linha.strip())
+    ```
+- adicionar conteudo ao arquivo, substitui o `w` por `a`, de append
 
