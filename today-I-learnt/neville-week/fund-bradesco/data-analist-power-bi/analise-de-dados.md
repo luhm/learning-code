@@ -77,6 +77,16 @@
         - conectores internos de dados variados, para pegar dados de diversas fontes
         - coleção de visualizações = relatórios
             - pode ter uma ou mais páginas
-        - dashboard coleção de elementos visuais de uma única página
-        - 
+        - dashboard/painel = coleção de elementos visuais de uma única página
+            - tela é o pano de fundo branco onde se constroi o dashboard
+            - pode compartilhar painéis com outros usuários ou grupos
+            - eles pode interagir com o painel
+        - blocos = um pedaço do dashboard
+            - podem ter dimensões e localização alteradas
+- aplicativos do Power BI
+    - coleção de objetos visuais da sua organização
+    - Existem aplicativos para todos os tipos de serviços on-line como google e github
+    ![alt text](image-1.png)
+        - geram relatórios já pre-prontos sobre os dados daquele aplicativo
+    
 
