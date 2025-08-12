@@ -37,3 +37,6 @@
 - usamos o shell para interagir com o Linux pelo terminal
   - é como uma "linguagem" no mesmo sentido do git
   - bash, zsh, etc tem comandos diferentes, todos são tipos de shell
+- existem padrões para que voce consiga trabalhar e todas
+  - FSH - hierarquia de diretórios que se usa em todos os linux
+  
